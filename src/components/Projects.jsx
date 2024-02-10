@@ -4,7 +4,7 @@ import { rightArrow } from '../assets'
 
 const Projects = () => {
   return (
-    <div className='flex flex-row flex-wrap p-10 sm:p-20 sm:px-40 bg-slate-50 gap-10 justify-center items-center'>
+    <div className='flex flex-row flex-wrap p-10 sm:p-20 sm:px-72 bg-slate-50 gap-10 justify-center items-center'>
       {projects.map((item)=>(
         <div className="flex flex-col items-center w-[25rem] p-10 rounded-lg bg-white gap-5" key={item.id}>
           <img src={item.dp} alt={item.title} className="flex round-lg w-[15rem] h-[10rem]" />
