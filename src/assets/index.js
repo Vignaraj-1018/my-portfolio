@@ -18,6 +18,7 @@ import medleyLogo from './medley-logo.svg'
 import rightArrow from './arrow-right-black.svg'
 import locationIcon from './location-icon.svg'
 import mailIcon from './mail-icon.svg'
+import mailProject from './mail-project.svg'
 
 export{
     menuClose,
@@ -39,5 +40,6 @@ export{
     locationIcon,
     mailIcon,
     menuOpenWhite,
-    menuCloseWhite
+    menuCloseWhite,
+    mailProject
 }

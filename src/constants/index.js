@@ -13,7 +13,7 @@ export const techStack = [
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg", name: "flask" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg", name: "springboot" }
 ]
-import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo } from "../assets"
+import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject } from "../assets"
 export const projects=[
     {
         id:31,
@@ -30,5 +30,13 @@ export const projects=[
         demo:'https://students-attendance-system.vercel.app/',
         dp:attendanceProjectLogo,
         pic:attendanceProjectPic
+    },
+    {
+        id:33,
+        title:'Mail Merchant - Mail Service Web Application | React | Python-Flask',
+        code:'https://github.com/Vignaraj-1018/Mail-Merchant',
+        demo:'https://mail-merchant.netlify.app/',
+        dp:mailProject,
+        pic:mailProject
     }
 ]
