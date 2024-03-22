@@ -19,6 +19,7 @@ import rightArrow from './arrow-right-black.svg'
 import locationIcon from './location-icon.svg'
 import mailIcon from './mail-icon.svg'
 import mailProject from './mail-project.svg'
+import internImg from './laptop-work.jpg'
 
 export{
     menuClose,
@@ -41,5 +42,6 @@ export{
     mailIcon,
     menuOpenWhite,
     menuCloseWhite,
-    mailProject
+    mailProject,
+    internImg
 }
