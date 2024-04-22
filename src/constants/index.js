@@ -11,7 +11,8 @@ export const techStack = [
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg", name: "react" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/angular/angular-original.svg", name: "angular" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg", name: "flask" },
-    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg", name: "springboot" }
+    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg", name: "springboot" },
+    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg", name: "mongodb" },
 ]
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject } from "../assets"
 export const projects=[
@@ -40,3 +41,10 @@ export const projects=[
         pic:mailProject
     }
 ]
+
+const leetCodeAPIUrl = "https://helper-api-vignu.el.r.appspot.com/leetcode_data"
+const leetCodeUsername = "vignaraj03"
+export const leetCodeProfileDataQuery = `${leetCodeAPIUrl}/my_profile/${leetCodeUsername}`;
+export const leetCodeProblemsSolvedQuery = `${leetCodeAPIUrl}/solvedProblemsCount/${leetCodeUsername}`;
+export const leetCodeLanguagesSolvedQuery = `${leetCodeAPIUrl}/languageProblemsCount/${leetCodeUsername}`;
+export const leetCodeCalendarDataQuery = `${leetCodeAPIUrl}/calendarData/${leetCodeUsername}`;
