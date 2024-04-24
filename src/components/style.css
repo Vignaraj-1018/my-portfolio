@@ -1,0 +1,16 @@
+/* Custom CSS */
+/* Width of the scrollbar */
+.scroll-bar::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track color */
+  .scroll-bar::-webkit-scrollbar-track {
+    background: none; /* Change to your desired track color */
+  }
+  
+  /* Thumb color */
+  .scroll-bar::-webkit-scrollbar-thumb {
+    background: #37393b; /* Change to your desired thumb color */
+    border-radius: 9999px; /* Change to your desired border radius */
+  }

@@ -17,28 +17,31 @@ export const techStack = [
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject } from "../assets"
 export const projects=[
     {
-        id:31,
-        title:'Medley | Web Music Player | React | ShazamAPI',
-        code:'https://github.com/Vignaraj-1018/MEDLEY-Music-Player',
-        demo:'https://medley-web.netlify.app/',
-        dp:medleyLogo,
-        pic:medleyPic
-    },
-    {
         id:32,
-        title:'Student Attendance System | Angular | SpringBoot',
+        title:'Student Attendance System',
         code:'https://github.com/Vignaraj-1018/Students-Attendance-System-Frontend',
         demo:'https://students-attendance-system.vercel.app/',
         dp:attendanceProjectLogo,
-        pic:attendanceProjectPic
+        pic:attendanceProjectPic,
+        techStack:['Angular', 'SpringBoot', 'MongoDB']
+    },
+    {
+        id:31,
+        title:'Medley - Web Music Player',
+        code:'https://github.com/Vignaraj-1018/MEDLEY-Music-Player',
+        demo:'https://medley-web.netlify.app/',
+        dp:medleyLogo,
+        pic:medleyPic,
+        techStack:['React', 'Redux', 'ShazamAPI']
     },
     {
         id:33,
-        title:'Mail Merchant - Mail Service Web Application | React | Python-Flask',
+        title:'Mail Merchant - Mail Service Web Application',
         code:'https://github.com/Vignaraj-1018/Mail-Merchant',
         demo:'https://mail-merchant.netlify.app/',
         dp:mailProject,
-        pic:mailProject
+        pic:mailProject,
+        techStack:['React', 'Flask', 'MongoDB']
     }
 ]
 

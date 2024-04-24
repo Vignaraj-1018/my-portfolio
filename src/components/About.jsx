@@ -3,12 +3,13 @@ import { aboutPic, internImg } from '../assets'
 import axios from 'axios'
 import { leetCodeProblemsSolvedQuery, leetCodeProfileDataQuery, leetCodeLanguagesSolvedQuery, leetCodeCalendarDataQuery } from '../constants'
 
+import './style.css'
+
 const About = () => {
 
   const [leetCodeProfileData,setLeetCodeProfileData] = useState()
   const [leetCodeSolved,setLeetCodeSolved] = useState()
   const [leetCodeLanguagesSolved,setLeetCodeLanguagesSolved] = useState()
-  const [displaySolvedPercentage,setDisplaySolvedPercentage] = useState(false)
   const [leetCodeCalendarData,setLeetCodeCalendarData] = useState()
 
   let solvedProblemsColors = [
@@ -68,13 +69,6 @@ const About = () => {
     getCalendarData();
   },[]);
 
-  const handleMouseOver = () => {
-    setDisplaySolvedPercentage(true);
-  };
-
-  const handleMouseOut = () => {
-    setDisplaySolvedPercentage(false);
-  };
 
   const getSolvedProblemsBgColor = (item)=>{
     console.log(item);
@@ -90,9 +84,6 @@ const About = () => {
     return bgColor[0].bar_color;
   }
 
-  const getBarWidth = (percentage) => {
-    return `w-[${percentage.toFixed(1)}%]`;
-  }
 
   console.log(leetCodeProfileData, leetCodeSolved, leetCodeLanguagesSolved, leetCodeCalendarData);
 
@@ -134,7 +125,7 @@ const About = () => {
           <p className="flex text-3xl font-bold text-blue-500">LeetCode Profile</p>
         </div>
         <div className="flex flex-row flex-wrap gap-10 justify-center">
-          <div className="flex flex-row gap-5 bg-[#535353] p-5 rounded-xl text-white items-center w-[20rem]">
+          <div className="flex flex-row gap-5 bg-[#535353] p-5 rounded-xl text-white items-center cursor-pointer w-[20rem] h-[15rem]" onClick={()=>{window.open("https://leetcode.com/vignaraj03/","_blank")}}>
             <img src={leetCodeProfileData?.profile.userAvatar} alt="LeetCode Profile" className='flex rounded-xl h-28' />
             <div className="flex flex-col gap-5">
               <div className="flex flex-col">
@@ -148,29 +139,29 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white w-[20rem]">
+          <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white cursor-pointer w-[20rem] h-[15rem]" onClick={()=>{window.open("https://leetcode.com/vignaraj03/","_blank")}}>
             <div className="flex flex-row justify-between">
-              <p className="flex text-xl text-bold">Languages</p>
+              <p className="flex text-xl font-bold">Languages</p>
             </div>
-            {leetCodeLanguagesSolved && leetCodeLanguagesSolved.languageProblemCount.map((item)=>(
-              <div className="flex flex-row justify-between items-center gap-10" key={item.languageName}>
-                <p className="flex text-sm p-1 bg-[#818181] rounded-lg">{item.languageName}</p>
-                <p className="flex items-center gap-1"> <span className="flex text-lg font-bold">{item.problemsSolved}</span> <span className="flex text-xs">Problems Solved</span></p>
-              </div>
-            ))}
+            <div className="flex flex-col gap-3 overflow-auto px-1 scroll-bar">
+              {leetCodeLanguagesSolved && leetCodeLanguagesSolved.languageProblemCount.map((item)=>(
+                <div className="flex flex-row justify-between items-center gap-10" key={item.languageName}>
+                  <p className="flex text-sm p-1 bg-[#818181] rounded-lg">{item.languageName}</p>
+                  <p className="flex items-center gap-1"> <span className="flex text-lg font-bold">{item.problemsSolved}</span> <span className="flex text-xs">Problems Solved</span></p>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white w-[25rem]">
-            <div className="flex flex-row justify-between">
-              <p className="flex text-xl text-bold">Solved Problems</p>
+          <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white cursor-pointer w-[20rem] h-[15rem]" onClick={()=>{window.open("https://leetcode.com/vignaraj03/","_blank")}}>
+            <div className="flex flex-row items-center gap-10 justify-between">
+              <p className="flex text-xl font-bold">Solved Problems</p>
+              <p className="flex items-center gap-2" >
+                <span className="flex text-xl">Total:</span>
+                <span className="flex text-xl font-bold">{leetCodeSolved?.totalQuestionSolved}</span>
+              </p>
             </div>
             <div className="flex flex-row gap-10 items-center">
-              <div className="flex justify-center items-center cursor-default">
-                <div className="flex border-2 border-[#312E2E] w-28 h-28 rounded-full justify-center items-center" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                  {!displaySolvedPercentage && <p className="flex text-lg font-bold" >{leetCodeSolved?.totalQuestionSolved}</p>}
-                  {displaySolvedPercentage && <p className="flex text-lg font-bold" >{leetCodeSolved?.percentageSolved.toFixed(1)}%</p>}
-                </div>
-              </div>
               <div className="flex flex-col gap-5 w-full">
                 {leetCodeSolved?.difficultyWise.map((item,key)=>(
                   <div className="flex flex-col" key={key}>
@@ -196,7 +187,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-10 text-xl ">
+        <div className="flex flex-row flex-wrap justify-center gap-5 text-xl ">
           <div className="flex gap-3 items-center justify-center">
             <p className="flex">Total Active Days: </p>
             <p className="flex text-2xl font-bold">{leetCodeCalendarData?.totalActiveDays}</p>
