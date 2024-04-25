@@ -1,5 +1,5 @@
 import React from 'react'
-import { github, instagram, linkedin, myPic, waveHand } from '../assets'
+import { github, instagram, leetCode, linkedin, myPic, waveHand } from '../assets'
 import { techStack } from '../constants'
 
 const Home = () => {
@@ -18,6 +18,7 @@ const Home = () => {
                     Hi, I'm Vignaraj, A passionate Software Developer based in Coimbatore, Tamil Nadu. 📍
                 </p>
                 <div className="flex flex-row gap-5 items-center justify-center sm:justify-normal">
+                    <a href="https://leetcode.com/vignaraj03"><img className='flex' src={leetCode} alt="LeetCode"/></a>
                     <a href="https://github.com/Vignaraj-1018"><img className='flex' src={github} alt="GitHub"/></a>
                     <a href="https://www.linkedin.com/in/vignaraj-d"><img className='flex' src={linkedin} alt="LinkedIn"/></a>
                     <a href="https://www.instagram.com/vignu_1018"><img className='flex' src={instagram} alt="Instagram"/></a>

@@ -20,6 +20,8 @@ import locationIcon from './location-icon.svg'
 import mailIcon from './mail-icon.svg'
 import mailProject from './mail-project.svg'
 import internImg from './laptop-work.jpg'
+import leetCode from './leetcode.svg'
+import leetCodeWhite from './leetcode-white.svg'
 
 export{
     menuClose,
@@ -43,5 +45,7 @@ export{
     menuOpenWhite,
     menuCloseWhite,
     mailProject,
-    internImg
+    internImg,
+    leetCode,
+    leetCodeWhite
 }
