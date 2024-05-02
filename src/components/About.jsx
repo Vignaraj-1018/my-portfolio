@@ -71,21 +71,21 @@ const About = () => {
 
 
   const getSolvedProblemsBgColor = (item)=>{
-    console.log(item);
+    // console.log(item);
     let bgColor = solvedProblemsColors.filter((i)=>i.type === item.type);
-    console.log(bgColor)
+    // console.log(bgColor)
     return bgColor[0].bg_color;
   }
 
   const getSolvedProblemsBarColor = (item)=>{
-    console.log(item);
+    // console.log(item);
     let bgColor = solvedProblemsColors.filter((i)=>i.type === item.type);
-    console.log(bgColor)
+    // console.log(bgColor)
     return bgColor[0].bar_color;
   }
 
 
-  console.log(leetCodeProfileData, leetCodeSolved, leetCodeLanguagesSolved, leetCodeCalendarData);
+  // console.log(leetCodeProfileData, leetCodeSolved, leetCodeLanguagesSolved, leetCodeCalendarData);
 
   return (
     <div className="flex flex-col w-full items-center gap-16 justify-center sm:p-20 p-10">
@@ -125,7 +125,7 @@ const About = () => {
           <p className="flex text-3xl font-bold text-blue-500">LeetCode Profile</p>
         </div>
         <div className="flex flex-row flex-wrap gap-10 justify-center">
-          <div className="flex flex-row gap-5 bg-[#535353] p-5 rounded-xl text-white items-center cursor-pointer w-[20rem] h-[15rem]" onClick={()=>{window.open("https://leetcode.com/vignaraj03/","_blank")}}>
+          <div className="flex flex-row gap-5 bg-[#535353] p-5 rounded-xl text-white items-center cursor-pointer w-[20rem] h-[16rem]" onClick={()=>{window.open("https://leetcode.com/vignaraj03/","_blank")}}>
             <img src={leetCodeProfileData?.profile.userAvatar} alt="LeetCode Profile" className='flex rounded-xl h-28' />
             <div className="flex flex-col gap-5">
               <div className="flex flex-col">
@@ -139,7 +139,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white cursor-pointer w-[20rem] h-[15rem]" onClick={()=>{window.open("https://leetcode.com/vignaraj03/","_blank")}}>
+          <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white cursor-pointer w-[20rem] h-[16rem]" onClick={()=>{window.open("https://leetcode.com/vignaraj03/","_blank")}}>
             <div className="flex flex-row justify-between">
               <p className="flex text-xl font-bold">Languages</p>
             </div>
@@ -153,7 +153,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white cursor-pointer w-[20rem] h-[15rem]" onClick={()=>{window.open("https://leetcode.com/vignaraj03/","_blank")}}>
+          <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white cursor-pointer w-[20rem] h-[16rem]" onClick={()=>{window.open("https://leetcode.com/vignaraj03/","_blank")}}>
             <div className="flex flex-row items-center gap-10 justify-between">
               <p className="flex text-xl font-bold">Solved Problems</p>
               <p className="flex items-center gap-2" >

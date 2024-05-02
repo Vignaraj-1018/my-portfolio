@@ -1,6 +1,7 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import { Contact, Home, Navbar, Projects, About } from './components'
 import { githubWhite, instagramWhite, leetCodeWhite, linkedinWhite} from './assets'
+import axios from 'axios';
 
 const App = () => {
   const [colorChange, setColorchange] = useState(false);
@@ -12,6 +13,34 @@ const App = () => {
         }
     };
     window.addEventListener("scroll", changeNavbarColor);
+
+    const sendViewAnalytics=()=>{
+      const url = "https://helper-api-vignu.el.r.appspot.com/my_website_analytics/website_view";
+      const data ={
+        "name":"My Portfolio",
+        "url":"https://vignaraj.netlify.app/"
+      }
+      axios.post(url,data)
+      .then((resp)=>{
+        console.log(resp);
+      })
+      .catch((err)=>{
+        console.log(err);
+      });
+    }
+
+    useEffect(()=>{
+      const sessionData = window.sessionStorage.getItem("analyticsSent");
+      if (sessionData){
+        // console.log("old Session");
+      }
+      else{
+        sendViewAnalytics();
+        // console.log("new Session");
+        window.sessionStorage.setItem("analyticsSent",true);
+      }
+    },[])
+
   return (
     <>
       <div className="flex flex-col h-full w-full font-sans ">
