@@ -3,6 +3,7 @@ import Home from "./Home";
 import Contact from "./Contact";
 import Projects from "./Projects";
 import About from "./About";
+import LeetCode from "./LeetCode";
 
 
 export {
@@ -10,5 +11,6 @@ export {
     Home,
     Contact,
     Projects,
-    About
+    About,
+    LeetCode
 }

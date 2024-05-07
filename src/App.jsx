@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import { Contact, Home, Navbar, Projects, About } from './components'
+import { Contact, Home, Navbar, Projects, About, LeetCode } from './components'
 import { githubWhite, instagramWhite, leetCodeWhite, linkedinWhite} from './assets'
 import axios from 'axios';
 
@@ -51,6 +51,9 @@ const App = () => {
       </section>
       <section id="about">
         <About/>
+      </section>
+      <section id="leetcode">
+        <LeetCode/>
       </section>
       <section id="projects">
         <Projects/>
