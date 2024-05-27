@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import { Contact, Home, Navbar, Projects, About, LeetCode } from './components'
+import { Contact, Home, Navbar, Projects, About, LeetCode, GitHub } from './components'
 import { githubWhite, hackerrankwhite, instagramWhite, leetCodeWhite, linkedinWhite} from './assets'
 import axios from 'axios';
 import { socialMediaWhiteLink } from './constants';
@@ -23,7 +23,7 @@ const App = () => {
       }
       axios.post(url,data)
       .then((resp)=>{
-        console.log(resp);
+        // console.log(resp);
       })
       .catch((err)=>{
         console.log(err);
@@ -55,6 +55,9 @@ const App = () => {
       </section>
       <section id="leetcode">
         <LeetCode/>
+      </section>
+      <section id='github'>
+        <GitHub/>
       </section>
       <section id="projects">
         <Projects/>

@@ -17,7 +17,7 @@ const DayNames = {
     }
     else{
         style = {
-          backgroundColor: '#838383'
+          backgroundColor: 'rgba(235, 237, 240)'
         };
     }
     // console.log(dataPoint.date.format('YYYY-MM-DD'), dataPoint);
