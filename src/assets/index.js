@@ -22,6 +22,9 @@ import mailProject from './mail-project.svg'
 import internImg from './laptop-work.jpg'
 import leetCode from './leetcode.svg'
 import leetCodeWhite from './leetcode-white.svg'
+import myLogo from './my_avatar.jpg'
+import hackerrank from './hackerrank.svg'
+import hackerrankwhite from './hackerrank-white.svg'
 
 export{
     menuClose,
@@ -47,5 +50,8 @@ export{
     mailProject,
     internImg,
     leetCode,
-    leetCodeWhite
+    leetCodeWhite,
+    myLogo,
+    hackerrank,
+    hackerrankwhite
 }

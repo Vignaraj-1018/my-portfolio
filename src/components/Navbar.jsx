@@ -1,12 +1,15 @@
 import React, {useState} from 'react'
-import { menuClose, menuCloseWhite, menuOpen, menuOpenWhite } from '../assets';
+import { menuClose, menuCloseWhite, menuOpen, menuOpenWhite, myLogo } from '../assets';
 
 const Navbar = ({colorChange}) => {
     const [navToggle,setNavToggle] = useState();
   return (
     <>
         <div className={`sm:flex hidden flex-row justify-between items-center shadow-lg p-5 px-10 fixed top-0 left-0 w-full ${colorChange? 'bg-[#2d2e32] text-white' : 'bg-white'} `}>
-            <a href="#home"><p className="flex text-xl font-bold cursor-pointer">Vignaraj.dev</p></a>
+            <a href="#home" className='flex flex-row justify-center items-center gap-5'>
+                <img src={myLogo} alt="My Logo" className="flex h-10 w-10 rounded-full"/>
+                <p className="flex text-xl font-bold cursor-pointer">Vignaraj.dev</p>
+            </a>
             <div className="flex flex-row text-xl font-semibold gap-10">
                 <a href="#home"><p className="flex cursor-pointer hover:text-blue-700">Home</p></a>
                 <a href="#about"><p className="flex cursor-pointer hover:text-blue-700">About</p></a>
@@ -15,7 +18,10 @@ const Navbar = ({colorChange}) => {
             </div>
         </div>
         <div className={`flex sm:hidden flex-row justify-between items-center shadow-lg p-5 fixed top-0 left-0 w-full ${colorChange? 'bg-[#2d2e32] text-white' : 'bg-white'}`}>
-            <a href="#home"><p className="flex text-xl font-bold cursor-pointer">Vignaraj.dev</p></a>
+            <a href="#home" className='flex flex-row justify-center items-center gap-5'>
+                <img src={myLogo} alt="My Logo" className="flex h-10 w-10 rounded-full"/>
+                <p className="flex text-xl font-bold cursor-pointer">Vignaraj.dev</p>
+            </a>
             <span className="text-xl" onClick={()=>{setNavToggle(!navToggle)}}>
                 {colorChange ? <img className='flex w-10 h-10' src={menuOpenWhite}/>:<img className='flex w-10 h-10' src={menuOpen}/> }
             </span>

@@ -25,6 +25,7 @@ html, body {
   color: white;
   padding: 20px;
   border-radius: 10px;
+  user-select: none;
   
   .timeline-months {
     display: flex;
@@ -75,6 +76,7 @@ html, body {
       flex-direction: column;
       flex-wrap: wrap;
       height: 100px;
+      cursor: pointer;
 
       &-cell {
         height: $cell-height;
