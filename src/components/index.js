@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import Projects from "./Projects";
 import About from "./About";
 import LeetCode from "./LeetCode";
+import GitHub from "./GitHub";
 
 
 export {
@@ -12,5 +13,6 @@ export {
     Contact,
     Projects,
     About,
-    LeetCode
+    LeetCode,
+    GitHub
 }

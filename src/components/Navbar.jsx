@@ -10,11 +10,11 @@ const Navbar = ({colorChange}) => {
                 <img src={myLogo} alt="My Logo" className="flex h-10 w-10 rounded-full"/>
                 <p className="flex text-xl font-bold cursor-pointer">Vignaraj.dev</p>
             </a>
-            <div className="flex flex-row text-xl font-semibold gap-10">
-                <a href="#home"><p className="flex cursor-pointer hover:text-blue-700">Home</p></a>
+            <div className="flex flex-row items-center text-xl font-semibold gap-10">
                 <a href="#about"><p className="flex cursor-pointer hover:text-blue-700">About</p></a>
                 <a href="#projects"><p className="flex cursor-pointer hover:text-blue-700">Projects</p></a>
                 <a href="#contact"><p className="flex cursor-pointer hover:text-blue-700">Contact</p></a>
+                <a href="/resume.pdf" target='_blank'><div className="flex justify-center items-center px-10 border-2 rounded-xl">Resume</div></a>
             </div>
         </div>
         <div className={`flex sm:hidden flex-row justify-between items-center shadow-lg p-5 fixed top-0 left-0 w-full ${colorChange? 'bg-[#2d2e32] text-white' : 'bg-white'}`}>
@@ -33,10 +33,10 @@ const Navbar = ({colorChange}) => {
                         {colorChange ? <img className='flex w-10 h-10' src={menuCloseWhite}/>:<img className='flex w-10 h-10' src={menuClose}/> }
                     </div>
                     <div className="flex flex-col text-xl font-semibold gap-10">
-                        <a href="#home"><p className="flex cursor-pointer hover:text-blue-700">Home</p></a>
                         <a href="#about"><p className="flex cursor-pointer hover:text-blue-700">About</p></a>
                         <a href="#projects"><p className="flex cursor-pointer hover:text-blue-700">Projects</p></a>
                         <a href="#contact"><p className="flex cursor-pointer hover:text-blue-700">Contact</p></a>
+                        <a href="/resume.pdf" target='_blank'><div className="flex">Resume</div></a>
                     </div>
                 </div>
             </div>
