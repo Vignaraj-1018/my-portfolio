@@ -30,17 +30,17 @@ const App = () => {
       });
     }
 
-    // useEffect(()=>{
-    //   const sessionData = window.sessionStorage.getItem("analyticsSent");
-    //   if (sessionData){
-    //     // console.log("old Session");
-    //   }
-    //   else{
-    //     sendViewAnalytics();
-    //     // console.log("new Session");
-    //     window.sessionStorage.setItem("analyticsSent",true);
-    //   }
-    // },[])
+    useEffect(()=>{
+      const sessionData = window.sessionStorage.getItem("analyticsSent");
+      if (sessionData){
+        // console.log("old Session");
+      }
+      else{
+        sendViewAnalytics();
+        // console.log("new Session");
+        window.sessionStorage.setItem("analyticsSent",true);
+      }
+    },[])
 
   return (
     <>
