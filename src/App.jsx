@@ -5,16 +5,6 @@ import axios from 'axios';
 import { socialMediaWhiteLink } from './constants';
 
 const App = () => {
-  const [colorChange, setColorchange] = useState(false);
-    const changeNavbarColor = () => {
-        if (window.scrollY >= 80) {
-            setColorchange(true);
-        } else {
-            setColorchange(false);
-        }
-    };
-    window.addEventListener("scroll", changeNavbarColor);
-
     const sendViewAnalytics=()=>{
       const url = "https://helper-api-vignu.el.r.appspot.com/my_website_analytics/website_view";
       const data ={
@@ -30,22 +20,36 @@ const App = () => {
       });
     }
 
-    useEffect(()=>{
-      const sessionData = window.sessionStorage.getItem("analyticsSent");
-      if (sessionData){
-        // console.log("old Session");
-      }
-      else{
-        sendViewAnalytics();
-        // console.log("new Session");
-        window.sessionStorage.setItem("analyticsSent",true);
-      }
-    },[])
+  useEffect(()=>{
+    const sessionData = window.sessionStorage.getItem("analyticsSent");
+    if (sessionData){
+      // console.log("old Session");
+    }
+    else{
+      // sendViewAnalytics();
+      // console.log("new Session");
+      window.sessionStorage.setItem("analyticsSent",true);
+    }
+  },[]);
 
   return (
-    <>
-      <div className="flex flex-col h-full w-full font-sans ">
-        <Navbar colorChange={colorChange}/>
+    <div className='flex flex-col bg-primary text-white'>
+      <div className="sm:flex flex-col justify-center items-center p-5 hidden bottom-0 fixed left-12 gap-5">
+        <div className="flex flex-col gap-5">
+          {socialMediaWhiteLink.map((item, key)=>(
+            <a href={item.link} key={key}>
+              <img src={item.logo} alt={item.name}/>
+            </a>
+          ))}
+        </div>
+        <div className="flex w-1 border bg-white h-32"></div>
+      </div>
+      <div className="sm:flex flex-col justify-center items-center p-5 hidden bottom-0 fixed right-12 gap-5">
+        <span className='flex text-vertical'>vignaraj03@gmail.com</span>
+        <div className="flex w-1 border bg-white h-32"></div>
+      </div>
+      <div className="flex w-full backdrop-blur-lg fixed">
+        <Navbar/>
       </div>
       <section id="home">
         <Home/>
@@ -65,7 +69,7 @@ const App = () => {
       <section id="contact">
         <Contact/>
       </section>
-      <div className="flex sm:flex-row flex-col justify-between w-full bg-[#2d2e32] text-white sm:px-72 p-10 gap-5">
+      <div className="flex sm:flex-row flex-col justify-between w-full text-white sm:px-72 p-10 gap-5">
         <p className="flex sm:text-xl text-base justify-center font-bold">Copyright © 2024. All rights are reserved</p>
         <div className="flex flex-row gap-5 items-center justify-center sm:justify-normal">
           {socialMediaWhiteLink.map((item)=>(
@@ -73,7 +77,7 @@ const App = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

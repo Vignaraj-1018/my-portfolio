@@ -135,7 +135,7 @@ const LeetCode = () => {
     },[]);
     
     return (
-        <div className='flex flex-col w-full items-center gap-16 justify-center sm:p-20 p-10 bg-slate-50'>
+        <div className='flex flex-col w-full items-center gap-16 justify-center sm:p-20 p-10'>
             <div className="flex flex-col gap-10">
                 <div className="flex justify-center">
                     <p className="flex text-3xl font-bold text-blue-500">LeetCode Profile</p>

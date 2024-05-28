@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.thin-border{
+  border: 1px solid #30363d;
+}
+
+.text-vertical{
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+:root {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+.header-visible {
+  transform: translateY(0);
+}
+
+:root::-webkit-scrollbar {
+  width: 5px;
+}
+
+:root::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+:root::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 9999px;
+}
