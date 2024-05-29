@@ -47,3 +47,10 @@
   background: #333333;
   border-radius: 9999px;
 }
+
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
