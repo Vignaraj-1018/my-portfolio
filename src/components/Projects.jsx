@@ -4,7 +4,7 @@ import { rightArrow } from '../assets'
 
 const Projects = () => {
   return (
-    <div className="flex flex-col p-10 sm:p-20 sm:px-72 gap-10">
+    <div className="flex flex-col sm:p-20 sm:px-72 gap-10">
       <div className="flex justify-center">
         <p className="flex text-3xl font-bold text-blue-500">My Projects</p>
       </div>

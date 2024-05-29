@@ -2,7 +2,7 @@ export const techStack = [
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg", name: "c" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg", name: "cpp" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", name: "python" },
-    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", name: "java" },
+    // { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", name: "java" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg", name: "html5" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg", name: "css3" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg", name: "javascript" },
@@ -13,6 +13,12 @@ export const techStack = [
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg", name: "flask" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg", name: "springboot" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg", name: "mongodb" },
+    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg", name: "git" },
+    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg", name: "github" },
+    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg", name: "node.js" },
+    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg", name: "next.js" },
+    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg", name: "express" },
+    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg", name: "vscode" },
 ]
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite } from "../assets"
 export const projects=[

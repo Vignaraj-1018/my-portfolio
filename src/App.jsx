@@ -48,13 +48,13 @@ const App = () => {
         <span className='flex text-vertical'>vignaraj03@gmail.com</span>
         <div className="flex w-1 border bg-white h-32"></div>
       </div>
-      <div className="flex w-full backdrop-blur-3xl fixed">
+      <div className="flex w-full bg-black sm:backdrop-blur-3xl fixed">
         <Navbar/>
       </div>
-      <section id="home" className='page'>
+      <section id="home" className='page sm:p-0 pt-20'>
         <Home/>
       </section>
-      <section id="about" className='page'>
+       <section id="about" className='page'>
         <About/>
       </section>
       <section id="leetcode" className='page'>
