@@ -1,6 +1,6 @@
 export const techStack = [
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg", name: "c" },
-    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg", name: "cpp" },
+    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg", name: "c++" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", name: "python" },
     // { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", name: "java" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg", name: "html5" },
@@ -112,4 +112,35 @@ export const socialMediaWhiteLink = [
         link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f5e2e1a11bdfd26cf33",
         logo: hackerrankwhite
     },
+]
+
+export const education = [
+    {
+        year:"2020 - Present",
+        name:"M.Sc. Software Systems",
+        institute: "Coimbatore Institute of Technology, Coimbatore",
+        grade: "8.55 (upto 8th sem)"
+    },
+    {
+        year:"2018 - 2020",
+        name:"Higher Secondary",
+        institute: "Bharatiya Vidya Bhavan, Coimbatore",
+        grade: "84 %"
+    },
+    // {
+    //     year:"2018",
+    //     name:"Secondary",
+    //     institute: "Bharatiya Vidya Bhavan, Coimbatore",
+    //     grade: "89 %"
+    // },
+]
+
+export const workExp = [
+    {
+        name:"Software Engineer Intern",
+        organisation: "Smartail Pvt. Ltd.",
+        duration: "Jun 2023 - Nov 2023",
+        location: "Chennai",
+        desc:"Completed a 6-month internship at Smartail as a Software Engineer, developing full stack applications with Angular, Spring Boot, MongoDB, and Python."
+    }
 ]

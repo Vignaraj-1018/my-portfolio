@@ -12,8 +12,7 @@ const Navbar = () => {
             </a>
             <div className="flex flex-row items-center text-xl font-semibold gap-10">
                 <a href="#about"><p className="flex cursor-pointer hover:bg-[#b1bac41f] p-1 rounded-lg">About</p></a>
-                <a href="#leetcode"><p className="flex cursor-pointer hover:bg-[#b1bac41f] p-1 rounded-lg">LeetCode</p></a>
-                <a href="#github"><p className="flex cursor-pointer hover:bg-[#b1bac41f] p-1 rounded-lg">GitHub</p></a>
+                <a href="#leetcode"><p className="flex cursor-pointer hover:bg-[#b1bac41f] p-1 rounded-lg">Stats</p></a>
                 <a href="#projects"><p className="flex cursor-pointer hover:bg-[#b1bac41f] p-1 rounded-lg">Projects</p></a>
                 <a href="#contact"><p className="flex cursor-pointer hover:bg-[#b1bac41f] p-1 rounded-lg">Contact</p></a>
                 <a href="https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/6654d6c6accac1d31a06fe00" target='_blank'><div className="flex justify-center items-center px-10 border-secondary border rounded-xl text-secondary hover:text-white hover:bg-secondary">Resume</div></a>
