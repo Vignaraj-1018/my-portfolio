@@ -25,6 +25,10 @@ import leetCodeWhite from './leetcode-white.svg'
 import myLogo from './my_avatar.jpg'
 import hackerrank from './hackerrank.svg'
 import hackerrankwhite from './hackerrank-white.svg'
+import globe from './globe-black.svg'
+import globeWhite from './globe-white.svg'
+import externalLink from './external-link-black.svg'
+import externalLinkWhite from './external-link-white.svg'
 
 export{
     menuClose,
@@ -53,5 +57,9 @@ export{
     leetCodeWhite,
     myLogo,
     hackerrank,
-    hackerrankwhite
+    hackerrankwhite,
+    globe,
+    globeWhite,
+    externalLink,
+    externalLinkWhite,
 }

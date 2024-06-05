@@ -142,7 +142,7 @@ const LeetCode = () => {
                     <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
                 </div>
                 <div className="flex flex-row flex-wrap gap-10 justify-center">
-                    <div className="flex flex-row gap-5 bg-[#535353] p-5 rounded-xl text-white items-center cursor-pointer w-[20rem] h-[16rem]" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7", "_blank") }}>
+                    <div className="flex flex-row gap-5 bg-[#535353] p-5 rounded-xl text-white items-center cursor-pointer w-[20rem] h-[16rem] select-none" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7", "_blank") }}>
                         <img src={leetCodeProfileData?.profile.userAvatar} alt="LeetCode Profile" className='flex rounded-xl h-28' />
                         <div className="flex flex-col gap-5">
                             <div className="flex flex-col">
@@ -170,7 +170,7 @@ const LeetCode = () => {
                         </div>
                     </div> */}
 
-                    <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white cursor-pointer w-[20rem] h-[16rem]" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7", "_blank") }}>
+                    <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white cursor-pointer w-[20rem] h-[16rem] select-none" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7", "_blank") }}>
                         <div className="flex flex-row items-center gap-10 justify-between">
                             <p className="flex text-xl font-bold">Solved Problems</p>
                             <p className="flex items-center gap-2" >

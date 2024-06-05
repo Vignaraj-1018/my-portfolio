@@ -33,9 +33,9 @@ const App = () => {
   },[]);
 
   return (
-    <div className='flex flex-col bg-primary text-white'>
+    <div className='flex flex-col bg-primary text-white gap-40'>
       <div className="sm:flex flex-col justify-center items-center p-5 hidden bottom-0 fixed left-12 gap-5">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 select-none">
           {socialMediaWhiteLink.map((item, key)=>(
             <a href={item.link} key={key}>
               <img src={item.logo} alt={item.name}/>

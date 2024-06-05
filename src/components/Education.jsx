@@ -11,7 +11,7 @@ const Education = () => {
             </div>
             <div className="flex flex-col items-center gap-5">
                 {workExp.map((item, key)=>(
-                    <div className="flex flex-row flex-wrap gap-10 items-center" key={key}>
+                    <div className="flex flex-row flex-wrap gap-10 items-center select-none" key={key}>
                         <div className="sm:flex hidden justify-start items-center thin-border">{item.duration}</div>
                         <div className="sm:flex hidden h-10 w-1 bg-secondary"></div>
                         <div className="flex flex-col gap-3 thin-border sm:w-[30rem] w-[20rem]">
@@ -19,7 +19,7 @@ const Education = () => {
                                 <p className="flex">{item.name}</p>
                                 <p className="flex text-slate-400">{item.location}</p>
                             </div>
-                            <p className="flex text-slate-300 italic">{item.organisation}</p>
+                            <p className="flex text-slate-300 italic    ">{item.organisation}</p>
                             <p className="flex text-slate-500 sm:hidden">{item.duration}</p>
                             <p className="flex text-slate-500">{item.desc}</p>
                         </div>
@@ -34,7 +34,7 @@ const Education = () => {
             </div>
             <div className="flex flex-col items-center gap-5">
                 {education.map((item, key)=>(
-                    <div className="flex flex-col gap-3 thin-border sm:w-[30rem] w-[20rem]" key={key}>
+                    <div className="flex flex-col gap-3 thin-border sm:w-[30rem] w-[20rem] select-none" key={key}>
                         <div className="flex flex-row justify-between">
                             <p className="flex">{item.name}</p>
                             <p className="flex text-slate-400">{item.year}</p>

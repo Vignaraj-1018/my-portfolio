@@ -23,32 +23,45 @@ export const techStack = [
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite } from "../assets"
 export const projects=[
     {
-        id:32,
+        id:34,
+        title:'Grammarly Clone',
+        code:'https://github.com/Vignaraj-1018/grammarly-clone',
+        demo:'https://grammarly-clone-vignu.netlify.app/',
+        dp:mailProject,
+        pic:mailProject,
+        techStack:['Next.js', 'Gemini API'],
+        description:"Grammarly clone, a website and a Chrome extension, that allows users to correct their grammar and spelling mistakes on the go. This project showcases my..."
+    },
+    {
+        id:33,
         title:'Student Attendance System',
         code:'https://github.com/Vignaraj-1018/Students-Attendance-System-Frontend',
         demo:'https://students-attendance-system.vercel.app/',
         dp:attendanceProjectLogo,
         pic:attendanceProjectPic,
-        techStack:['Angular', 'SpringBoot', 'MongoDB']
+        techStack:['Angular', 'SpringBoot', 'MongoDB'],
+        description:"This Angular-based front-end repository powers a Student Attendance System, providing a user-friendly interface for students to effortlessly track their..."
     },
     {
-        id:31,
-        title:'Medley - Web Music Player',
-        code:'https://github.com/Vignaraj-1018/MEDLEY-Music-Player',
-        demo:'https://medley-web.netlify.app/',
-        dp:medleyLogo,
-        pic:medleyPic,
-        techStack:['React', 'Redux', 'ShazamAPI']
-    },
-    {
-        id:33,
-        title:'Mail Merchant - Mail Service Web Application',
+        id:32,
+        title:'Mail Merchant',
         code:'https://github.com/Vignaraj-1018/Mail-Merchant',
         demo:'https://mail-merchant.netlify.app/',
         dp:mailProject,
         pic:mailProject,
-        techStack:['React', 'Flask', 'MongoDB']
-    }
+        techStack:['React', 'Flask', 'MongoDB'],
+        description:"Mail Merchant is a free email integration API built with Python Flask and MongoDB. Users can create an account, verify their email address, and obtain an..."
+    },
+    {
+        id:31,
+        title:'Medley - Music Player',
+        code:'https://github.com/Vignaraj-1018/MEDLEY-Music-Player',
+        demo:'https://medley-web.netlify.app/',
+        dp:medleyLogo,
+        pic:medleyPic,
+        techStack:['React', 'Redux', 'ShazamAPI'],
+        description:"Plays songs with Shazam Core API. Plays the desired song on search. Explore trending songs around us with Geolocation API."
+    },
 ]
 
 const leetCodeAPIUrl = "https://helper-api-vignu.el.r.appspot.com/leetcode_data"
