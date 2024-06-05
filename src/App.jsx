@@ -51,7 +51,7 @@ const App = () => {
       <div className="flex w-full bg-black sm:backdrop-blur-3xl fixed">
         <Navbar/>
       </div>
-      <section id="home" className='page sm:p-0 pt-20'>
+      <section id="home" className='page sm:p-0 pt-24'>
         <Home/>
       </section>
       <section id="about" className='page'>
