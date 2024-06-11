@@ -11,7 +11,7 @@ const Projects = () => {
       </div>
       <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
         {projects.map((project, key)=>(
-          <div className="flex flex-col gap-4 thin-border w-[30rem] cursor-pointer select-none" key={key} onClick={()=>window.open(project.code, "_blank")}>
+          <div className="flex flex-col gap-4 thin-border w-[30rem] cursor-pointer select-none" key={key} onClick={()=>window.open(project.code, "_blank")} data-aos="fade-up" data-aos-duration='1000'>
             <div className="flex flex-row justify-between items-center w-full">
               <div className="flex flex-row gap-3">
                 <img src={globeWhite} alt="Website" />

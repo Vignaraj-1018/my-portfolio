@@ -28,7 +28,7 @@ const About = () => {
           </div>
           <div className="sm:flex hidden flex-wrap flex-row gap-3 justify-start select-none">
             {techStackWhite.map((item, key)=>(
-              <div className="flex gap-3 flex-auto border-slate-600 border-[1px] p-3 rounded-xl min-w-16 items-center justify-center" key={key}>
+              <div className="flex gap-3 flex-auto border-slate-600 border-[1px] p-3 rounded-xl min-w-16 items-center justify-center" key={key} data-aos="fade-up" data-aos-duration='1000'>
                 <img src={item.src} alt={item.name} className="flex w-8 h-8" />
                 <p className="flex text-slate-200 text-lg">{item.name}</p>
               </div>
@@ -38,7 +38,7 @@ const About = () => {
             <p className="flex font-bold text-xl underline underline-offset-2 text-secondary">Tech Stack</p>
             <div className="flex flex-wrap gap-3">
               {techStack.map((item, key)=>(
-                <div className="flex gap-3 flex-auto border-slate-600 border-[1px] p-3 rounded-xl items-center justify-center" key={key}>
+                <div className="flex gap-3 flex-auto border-slate-600 border-[1px] p-3 rounded-xl items-center justify-center" key={key} data-aos="fade-up" data-aos-duration='1000'>
                   <p className="flex text-slate-200 text-lg">{item.name}</p>
                 </div>
               ))}

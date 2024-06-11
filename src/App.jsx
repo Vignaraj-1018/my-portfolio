@@ -3,6 +3,9 @@ import { Contact, Home, Navbar, Projects, About, LeetCode, GitHub, Education } f
 import { githubWhite, hackerrankwhite, instagramWhite, leetCodeWhite, linkedinWhite} from './assets'
 import axios from 'axios';
 import { socialMediaWhiteLink } from './constants';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { Tooltip } from "react-tooltip";
 
 const App = () => {
     const sendViewAnalytics=()=>{
@@ -26,10 +29,11 @@ const App = () => {
       // console.log("old Session");
     }
     else{
-      sendViewAnalytics();
+      // sendViewAnalytics();
       // console.log("new Session");
       window.sessionStorage.setItem("analyticsSent",true);
     }
+    Aos.init();
   },[]);
 
   return (
@@ -37,7 +41,7 @@ const App = () => {
       <div className="sm:flex flex-col justify-center items-center p-5 hidden bottom-0 fixed left-12 gap-5">
         <div className="flex flex-col gap-5 select-none">
           {socialMediaWhiteLink.map((item, key)=>(
-            <a href={item.link} key={key}>
+            <a href={item.link} key={key} data-tooltip-id={item.id}>
               <img src={item.logo} alt={item.name}/>
             </a>
           ))}
@@ -80,6 +84,9 @@ const App = () => {
           ))}
         </div>
       </div>
+      {socialMediaWhiteLink.map((item,key)=>(
+        <Tooltip id={item.id} key={key} place="right" content={item.name} variant='info'/>
+      ))}
     </div>
   )
 }

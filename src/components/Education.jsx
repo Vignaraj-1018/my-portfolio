@@ -9,7 +9,7 @@ const Education = () => {
                 <p className="flex text-secondary font-bold text-3xl">Work Experience</p>
                 <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
             </div>
-            <div className="flex w-full justify-center items-center select-none">
+            <div className="flex w-full justify-center items-center select-none" data-aos="fade-up" data-aos-duration='1000'>
                 <div className="relative w-[35rem] pl-10 after:absolute after:inset-y-0 after:left-3 after:top-1 after:w-2 after:bg-black dark:after:bg-gray-600 flex flex-col gap-10">
                     <div className="flex flex-col text-sm relative">
                         <div className="aspect-square w-8 bg-gray-900 rounded-full absolute -left-3 translate-x-[-29.5px] z-10 top-1 dark:bg-gray-50" />
@@ -28,7 +28,7 @@ const Education = () => {
                 <p className="flex text-secondary font-bold text-3xl">Education</p>
                 <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
             </div>
-            <div className="flex w-full justify-center items-center select-none">
+            <div className="flex w-full justify-center items-center select-none" data-aos="fade-up" data-aos-duration='1000'>
                 <div className="relative w-[35rem] pl-10 after:absolute after:inset-y-0 after:left-3 after:top-1 after:w-2 after:bg-black dark:after:bg-gray-600 flex flex-col gap-10">
                     <div className="flex flex-col text-sm relative">
                         <div className="aspect-square w-8 bg-gray-900 rounded-full absolute -left-3 translate-x-[-29.5px] z-10 top-1 dark:bg-gray-50" />
