@@ -4,32 +4,26 @@ import { socialMediaLink, techStack } from '../constants'
 
 const Home = () => {
   return (
-    <div className=' sm:py-52 py-32 flex flex-col bg-slate-50'>
-        <div className="flex flex-col sm:flex-row-reverse w-full justify-center items-center gap-10">
-            <div className="flex">
-                <img src={myPic} alt="My Picture" className='flex w-[20rem] h-[25rem] rounded-xl' />
-            </div>
-            <div className="flex flex-col sm:w-[30rem] w-full gap-10 p-10 ">
-                <div className="flex text-3xl font-bold gap-5 justify-center sm:justify-normal">
-                    <p className="flex">Software Developer</p>
-                    <img src={waveHand} alt="Waving Hand" className='sm:flex hidden h-10 w-10' />
-                </div>
-                <p className="flex text-xl text-slate-500 text-center sm:text-left">
-                    Hi, I'm Vignaraj, A passionate Software Developer based in Coimbatore, Tamil Nadu. 📍
-                </p>
-                <div className="flex flex-row gap-5 items-center justify-center sm:justify-normal">
-                {socialMediaLink.map((item)=>(
-                    <a href={item.link}  key={item.name} target='_blank'><img className='flex' src={item.logo} alt={item.name}/></a>
-                ))}
-                </div>
-            </div>
+    <div className="flex flex-col sm:flex-row-reverse w-full justify-center items-center gap-10">
+        <div className="flex">
+            <img src={myPic} alt="My Picture" className='flex w-[15rem] h-[15rem] rounded-full hover:scale-125 transition' />
         </div>
-        <div className="flex flex-col justify-center items-center gap-5 p-10">
-            <p className="flex text-xl font-bold underline-offset-4 underline">Tech Stack</p>
-            <div className="flex flex-row flex-wrap gap-5 justify-center">
-                {techStack.map((item)=>(
-                    <img src={item.src} key={item.name} alt={item.name} title={item.name} className='flex h-10 w-10 cursor-default' />
-                ))}
+        <div className="flex flex-col sm:w-[60rem] w-full gap-10 p-10 ">
+            <div className="flex">
+                <p className="flex text-3xl text-secondary">Hi, I am</p>
+            </div>
+            <div className="flex flex-col gap-5">
+                <p className="flex sm:text-7xl text-4xl font-bold">Vignaraj D</p>
+                <p className="flex sm:text-7xl text-4xl font-semibold text-slate-500">I build things for the web.</p>
+                <p className="flex text-lg text-slate-400">I'm a full-stack web developer who gets a real kick out of unraveling complex problems and constantly expanding my skillset.  Building things isn't just a job for me, it's a journey of discovery!
+                </p>
+            </div>
+            <div className="flex">
+                <a href="#contact">
+                    <div className="flex border-2 text-secondary border-secondary hover:text-white hover:bg-secondary p-3 rounded-xl sm:hover:scale-110 cursor-pointer select-none">
+                        Get in touch
+                    </div>
+                </a>
             </div>
         </div>
     </div>

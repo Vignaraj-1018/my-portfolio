@@ -5,7 +5,7 @@ import Projects from "./Projects";
 import About from "./About";
 import LeetCode from "./LeetCode";
 import GitHub from "./GitHub";
-
+import Education from "./Education";
 
 export {
     Navbar,
@@ -14,5 +14,6 @@ export {
     Projects,
     About,
     LeetCode,
-    GitHub
+    GitHub,
+    Education
 }

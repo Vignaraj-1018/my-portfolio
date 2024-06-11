@@ -1,36 +1,29 @@
 import React from 'react'
 import { projects } from '../constants'
-import { rightArrow } from '../assets'
+import { externalLink, externalLinkWhite, globeWhite, rightArrow } from '../assets'
 
 const Projects = () => {
   return (
-    <div className="flex flex-col bg-slate-50 p-10 sm:p-20 sm:px-72 gap-10">
-      <div className="flex justify-center">
-        <p className="flex text-3xl font-bold text-blue-500">My Projects</p>
+    <div className="flex flex-col sm:w-[60vw] w-[75vw] gap-10">
+      <div className="flex flex-row items-center gap-5 w-full">
+        <p className="flex text-secondary font-bold text-3xl">Projects</p>
+        <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
       </div>
-      <div className='flex flex-row flex-wrap gap-10 justify-center items-center'>
-        {projects.map((item)=>(
-          <div className="flex flex-col items-center w-[25rem] p-10 rounded-lg bg-white gap-5" key={item.id}>
-            <img src={item.dp} alt={item.title} className="flex round-lg w-[15rem] h-[10rem]" />
-            <p className="flex text-xl font-bold text-center">{item.title}</p>
-            <div className="flex flex-row flex-wrap gap-5">
-              {item.techStack.map((techStack,key)=>(
-                <p key={key} className="flex text-sm font-bold border-2 border-[#535353] py-1 px-2 rounded-xl">{techStack}</p>
-              ))}
+      <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
+        {projects.map((project, key)=>(
+          <div className="flex flex-col gap-4 thin-border w-[30rem] cursor-pointer select-none" key={key} onClick={()=>window.open(project.code, "_blank")}>
+            <div className="flex flex-row justify-between items-center w-full">
+              <div className="flex flex-row gap-3">
+                <img src={globeWhite} alt="Website" />
+                <p className="flex text-xl font-bold">{project.title}</p>
+              </div>
+              <a href={project.demo} target='_blank'><img src={externalLinkWhite} alt="External Link" className='flex hover:scale-110'/></a>
             </div>
-            <div className="flex justify-between items-center w-full font-bold">
-              <a href={item.demo} target='_blank'>
-                <div className="flex gap-2 cursor-pointer text-white justify-center flex-row bg-[#535353] py-1 px-2 rounded-xl">
-                  <p className="flex">Demo</p>
-                  <img src={rightArrow} alt='arrow' className="flex" />
-                </div>
-              </a>
-              <a href={item.code} target='_blank'>
-                <div className="flex gap-2 cursor-pointer text-white justify-center flex-row bg-[#535353] py-1 px-2 rounded-xl">
-                  <p className="flex">Code</p>
-                  <img src={rightArrow} alt='arrow' className="flex" />
-                </div>
-              </a>
+            <p className="flex text-slate-400 sm:h-[5rem]">{project.description}</p>
+            <div className="flex flex-wrap flex-row gap-2">
+              {project.techStack.map((item, key)=>(
+                <div className="flex p-1 bg-[#3aabfd1a] text-secondary text-semibold text-lg rounded-xl" key={key}>{item}</div>
+              ))}
             </div>
           </div>
         ))}

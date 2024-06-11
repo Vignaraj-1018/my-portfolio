@@ -1,42 +1,48 @@
 import React, { useEffect, useState } from 'react'
 import { aboutPic, internImg } from '../assets'
 import axios from 'axios'
-import { leetCodeProblemsSolvedQuery, leetCodeProfileDataQuery, leetCodeLanguagesSolvedQuery, leetCodeCalendarDataQuery } from '../constants'
+import { leetCodeProblemsSolvedQuery, leetCodeProfileDataQuery, leetCodeLanguagesSolvedQuery, leetCodeCalendarDataQuery, techStack, education, techStackWhite } from '../constants'
 
 import './style.css'
 
 const About = () => {
 
   return (
-    <div className="flex flex-col w-full items-center gap-16 justify-center sm:p-20 p-10">
-      <div className="flex flex-col sm:flex-row gap-10 justify-center">  
-        <div className="flex">
-          <img src={aboutPic} alt="About Me" className="flex h-[20rem] w-[25rem] rounded-xl" />
+    <div className="flex flex-col sm:w-[60vw] w-[75vw]">
+      <div className="flex flex-col gap-5">
+        <div className="flex flex-row items-center gap-5">
+          <p className="flex text-secondary font-bold text-3xl">About me</p>
+          <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
         </div>
-        <div className="flex flex-col gap-7 items-center sm:items-start text-center sm:text-start sm:w-[30rem]">
-          <p className="flex text-xl text-blue-500 font-bold">ABOUT ME</p>
-          <p className="flex font-bold text-2xl">Software Developer <br/> based in Coimbatore, Tamil Nadu. 📍</p>
-          <div className="flex gap-5 text-lg flex-col text-gray-500">
-            <p className="flex">Hey there! I'm Vignaraj, a passionate software developer with a knack for turning ideas into reality through code.</p>
-            <p className="flex">My journey into the world of software development began with a curiosity-driven exploration of programming languages and technologies.</p>
+        <div className="flex flex-col gap-10 ">
+          <div className="flex flex-col gap-3">
+            <p className="flex text-slate-400">
+              I'm a full-stack web developer with a knack for cracking problems and a love for learning new things.  I've honed my skills in both front-end and back-end development, and I'm certified in areas like problem-solving, JavaScript, React, NodeJS, and Python.  I even aced the HackerRank Frontend Developer certification!  And to show you I don't just talk the talk, I've actively solved over 200 problems on LeetCode (including earning the 50 Days Badge this year!) to put my skills to the test.
+            </p>
+            {/* <p className="flex text-slate-400">
+              My passion for learning keeps me constantly expanding my knowledge.  I've taken courses on freeCodeCamp and Coursera, diving deep into back-end development, APIs, Git, and more.  This hunger for knowledge extends beyond myself - I've even hosted sessions for the FOSS Club of CIT to share my expertise on Git and GitHub.
+            </p> */}
+            <p className="flex text-slate-400">
+              I'm a team player who thrives on tackling complex challenges and delivering effective solutions.  I'm always on the lookout for new opportunities to collaborate within the tech community and keep growing as a developer.
+            </p>
           </div>
-        </div>
-      </div>
-      <div className="flex flex-row">
-        <div className="flex flex-col-reverse sm:flex-row gap-10 justify-center">
-          <div className="flex flex-col gap-7 items-center sm:items-start text-center sm:text-start sm:w-[30rem]">
-            <p className="flex text-xl text-blue-500 font-bold">Work / Intern Experience</p>
-            <div className="flex font-bold flex-col items-center sm:items-start text-center sm:text-start">
-              <p className="flex text-2xl"> Software Developer Intern <br/> Smartail Pvt. Ltd., Chennai📍</p>
-              <p className="flex text-sx text-gray-500">Jun 2023 - Nov 2023</p>
-            </div>
-            <div className="flex gap-5 text-lg flex-col text-gray-500">
-              <p >Developed Analytics page, Teacher Configuration, Teacher and Student Dashboard for the Student Assessment Mobile Application using <span className='font-bold'>Angular, Spring Boot, MongoDB Aggregation</span> which improved the visualization of insight analytics.</p>
-              <p >Resolved various bugs in frontend and backend of the system.</p>
-            </div>
+          <div className="sm:flex hidden flex-wrap flex-row gap-3 justify-start select-none">
+            {techStackWhite.map((item, key)=>(
+              <div className="flex gap-3 flex-auto border-slate-600 border-[1px] p-3 rounded-xl min-w-16 items-center justify-center" key={key}>
+                <img src={item.src} alt={item.name} className="flex w-8 h-8" />
+                <p className="flex text-slate-200 text-lg">{item.name}</p>
+              </div>
+            ))}
           </div>
-          <div className="flex justify-center items-center">
-            <img src={internImg} alt="About Me" className="flex h-[20rem] w-[25rem] rounded-xl" />
+          <div className="flex sm:hidden flex-wrap flex-col gap-5 justify-start select-none">
+            <p className="flex font-bold text-xl underline underline-offset-2 text-secondary">Tech Stack</p>
+            <div className="flex flex-wrap gap-3">
+              {techStack.map((item, key)=>(
+                <div className="flex gap-3 flex-auto border-slate-600 border-[1px] p-3 rounded-xl items-center justify-center" key={key}>
+                  <p className="flex text-slate-200 text-lg">{item.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
