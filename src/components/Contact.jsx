@@ -67,7 +67,7 @@ const Contact = () => {
         </div>
         <p className="flex text-xl text-slate-400">Have a question or want to work together? Fill out the form below and we'll get back to you as soon as possible.</p>
       </div>
-      <form className='flex flex-col items-center gap-10'>
+      <form className='flex flex-col items-center gap-10' data-aos="fade-up" data-aos-duration='1000'>
         <div className="flex sm:flex-row flex-col gap-10 w-full">
           <div className="flex flex-col gap-1 sm:w-[50%]">
             <label className="flex text-xl">Name</label>

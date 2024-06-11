@@ -142,7 +142,7 @@ const LeetCode = () => {
                     <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
                 </div>
                 <div className="flex flex-row flex-wrap gap-10 justify-center">
-                    <div className="flex flex-row gap-5 bg-[#535353] p-5 rounded-xl text-white items-center cursor-pointer w-[20rem] h-[16rem] select-none" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7", "_blank") }}>
+                    <div className="flex flex-row gap-5 bg-[#535353] p-5 rounded-xl text-white items-center cursor-pointer w-[20rem] h-[16rem] select-none" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7", "_blank") }} data-aos="fade-right" data-aos-duration='1000'>
                         <img src={leetCodeProfileData?.profile.userAvatar} alt="LeetCode Profile" className='flex rounded-xl h-28' />
                         <div className="flex flex-col gap-5">
                             <div className="flex flex-col">
@@ -170,7 +170,7 @@ const LeetCode = () => {
                         </div>
                     </div> */}
 
-                    <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white cursor-pointer w-[20rem] h-[16rem] select-none" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7", "_blank") }}>
+                    <div className="flex flex-col bg-[#535353] gap-3 p-5 rounded-xl text-white cursor-pointer w-[20rem] h-[16rem] select-none" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7", "_blank") }} data-aos="fade-left" data-aos-duration='1000'>
                         <div className="flex flex-row items-center gap-10 justify-between">
                             <p className="flex text-xl font-bold">Solved Problems</p>
                             <p className="flex items-center gap-2" >
@@ -204,7 +204,7 @@ const LeetCode = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-row flex-wrap justify-center gap-5 text-xl ">
+                <div className="flex flex-row flex-wrap justify-center gap-5 text-xl " data-aos="fade-up" data-aos-duration='1000'>
                     <div className="flex gap-3 items-center justify-center">
                         <p className="flex">Total Active Days: </p>
                         <p className="flex text-2xl font-bold">{leetCodeCalendarData?.totalActiveDays}</p>
@@ -214,7 +214,7 @@ const LeetCode = () => {
                         <p className="flex text-2xl font-bold">{leetCodeCalendarData?.streak}</p>
                     </div>
                 </div>
-                <div className="flex sm:justify-center sm:w-full w-[20rem] overflow-auto">
+                <div className="flex sm:justify-center sm:w-full w-[20rem] overflow-auto" data-aos="fade-up" data-aos-duration='1000'>
                     {showChart && <Timeline range={chartDates} data={chartValues} colorFunc={({ alpha }) => `rgba(0, 256, 0, ${alpha})`}/>}
                 </div>
             </div>

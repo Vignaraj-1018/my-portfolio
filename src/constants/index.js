@@ -126,27 +126,32 @@ export const socialMediaLink = [
 
 export const socialMediaWhiteLink = [
     {
+        id:"SM1",
         name:"LeetCode",
         link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7",
         logo: leetCodeWhite
     },
     {
+        id:"SM2",
         name:"GitHub",
         link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f1e9631d5480b281d09",
         logo: githubWhite
     },
     {
+        id:"SM3",
         name:"LinkedIn",
         link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f32430f12d8ca9dcf2b",
         logo: linkedinWhite
     },
     {
+        id:"SM4",
         name:"Instagram",
         link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f429631d5480b281d0a",
         logo: instagramWhite
     },
     {
-        name:"Hackerrank",
+        id:"SM5",
+        name:"HackerRank",
         link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f5e2e1a11bdfd26cf33",
         logo: hackerrankwhite
     },
