@@ -9,7 +9,7 @@ const Projects = () => {
         <p className="flex text-secondary font-bold text-3xl">Projects</p>
         <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
       </div>
-      <div className="flex flex-row flex-wrap gap-3">
+      <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
         {projects.map((project, key)=>(
           <div className="flex flex-col gap-4 thin-border w-[30rem] cursor-pointer select-none" key={key} onClick={()=>window.open(project.code, "_blank")}>
             <div className="flex flex-row justify-between items-center w-full">
@@ -22,7 +22,7 @@ const Projects = () => {
             <p className="flex text-slate-400 sm:h-[5rem]">{project.description}</p>
             <div className="flex flex-wrap flex-row gap-2">
               {project.techStack.map((item, key)=>(
-                <div className="flex p-1 bg-[#3aabfd1a] text-secondary text-semibold text-lg rounded-xl">{item}</div>
+                <div className="flex p-1 bg-[#3aabfd1a] text-secondary text-semibold text-lg rounded-xl" key={key}>{item}</div>
               ))}
             </div>
           </div>

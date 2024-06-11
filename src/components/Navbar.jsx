@@ -5,16 +5,28 @@ const Navbar = () => {
     const [navToggle,setNavToggle] = useState();
   return (
     <>
-        <div className={`sm:flex hidden flex-row justify-between items-center shadow-lg p-5 px-10 top-0 left-0 w-full`}>
+        <div className={`sm:flex hidden flex-row justify-between items-center shadow-lg p-5 px-10 top-0 left-0 w-full select-none`}>
             <a href="/#" className='flex flex-row justify-center items-center gap-5'>
                 <img src={myLogo} alt="My Logo" className="flex h-10 w-10 rounded-full"/>
                 <p className="flex text-xl font-bold cursor-pointer">Vignaraj.dev</p>
             </a>
             <div className="flex flex-row items-center text-xl font-semibold gap-10">
-                <a href="#about"><p className="flex cursor-pointer hover:bg-[#b1bac41f] p-1 rounded-lg">About</p></a>
-                <a href="#leetcode"><p className="flex cursor-pointer hover:bg-[#b1bac41f] p-1 rounded-lg">Stats</p></a>
-                <a href="#projects"><p className="flex cursor-pointer hover:bg-[#b1bac41f] p-1 rounded-lg">Projects</p></a>
-                <a href="#contact"><p className="flex cursor-pointer hover:bg-[#b1bac41f] p-1 rounded-lg">Contact</p></a>
+                <a href="#about" className='relative group'>
+                    <p className="flex cursor-pointer p-1 rounded-lg">About</p>
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
+                </a>
+                <a href="#leetcode" className='relative group'>
+                    <p className="flex cursor-pointer p-1 rounded-lg">Stats</p>
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
+                </a>
+                <a href="#projects" className='relative group'>
+                    <p className="flex cursor-pointer p-1 rounded-lg">Projects</p>
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
+                </a>
+                <a href="#contact" className='relative group'>
+                    <p className="flex cursor-pointer p-1 rounded-lg">Contact</p>
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
+                </a>
                 <a href="https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/6654d6c6accac1d31a06fe00" target='_blank'><div className="flex justify-center items-center px-10 border-secondary border rounded-xl text-secondary hover:text-white hover:bg-secondary">Resume</div></a>
             </div>
         </div>
