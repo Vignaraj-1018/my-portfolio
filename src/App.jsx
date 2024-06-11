@@ -26,7 +26,7 @@ const App = () => {
       // console.log("old Session");
     }
     else{
-      // sendViewAnalytics();
+      sendViewAnalytics();
       // console.log("new Session");
       window.sessionStorage.setItem("analyticsSent",true);
     }
