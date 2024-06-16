@@ -1,4 +1,5 @@
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite } from "../assets"
+import { BackendAPIFreeCodeCamp } from "../assets/certificates"
 import { angularWhite, cWhite, cppWhite, cssWhite, expressjsWhite, flaskWhite, gitWhite, htmlWhite, jsWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
 
 export const techStack = [
@@ -186,4 +187,31 @@ export const workExp = [
         location: "Chennai",
         desc:"Completed a 6-month internship at Smartail as a Software Engineer, developing full stack applications with Angular, Spring Boot, MongoDB, and Python."
     }
+]
+
+export const certificates = [
+    {
+        id:'C1',
+        name:'Backend Development and APIs',
+        organisation:'freeCodeCamp',
+        issueDate: 'May 2024',
+        credentialId: 'vignaraj_1018-bedaa',
+        credentialLink: 'https://freecodecamp.org/certification/Vignaraj_1018/back-end-development-and-apis',
+        skills: ['Node.js','Express.js','MongoDB','Mongoose','RESTFul API'],
+        picture: BackendAPIFreeCodeCamp,
+        logo:'https://www.freecodecamp.org/static/ribbon-f4307732bf92855b215beb8c6dbde5cc.svg',
+        description: 'Developed proficiency in using Node.js to build scalable backend applications, enhancing my ability to create efficient server-side solutions. Acquired in-depth knowledge of MongoDB, a leading NoSQL database, for effective data storage and retrieval in web applications.'
+    },
+    {
+        id:'C2',
+        name:'Backend Development and APIs',
+        organisation:'freeCodeCamp',
+        issueDate: 'May 2024',
+        credentialId: 'vignaraj_1018-bedaa',
+        credentialLink: 'https://freecodecamp.org/certification/Vignaraj_1018/back-end-development-and-apis',
+        skills: ['Node.js','Express.js','MongoDB','Mongoose','RESTFul API'],
+        picture: BackendAPIFreeCodeCamp,
+        logo:'https://www.freecodecamp.org/static/ribbon-f4307732bf92855b215beb8c6dbde5cc.svg',
+        description: 'Developed proficiency in using Node.js to build scalable backend applications, enhancing my ability to create efficient server-side solutions. Acquired in-depth knowledge of MongoDB, a leading NoSQL database, for effective data storage and retrieval in web applications.'
+    },
 ]

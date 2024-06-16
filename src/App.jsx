@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import { Contact, Home, Navbar, Projects, About, LeetCode, GitHub, Education } from './components'
+import { Contact, Home, Navbar, Projects, About, LeetCode, GitHub, Education, Certificates } from './components'
 import { githubWhite, hackerrankwhite, instagramWhite, leetCodeWhite, linkedinWhite} from './assets'
 import axios from 'axios';
 import { socialMediaWhiteLink } from './constants';
@@ -29,7 +29,7 @@ const App = () => {
       // console.log("old Session");
     }
     else{
-      sendViewAnalytics();
+      // sendViewAnalytics();
       // console.log("new Session");
       window.sessionStorage.setItem("analyticsSent",true);
     }
@@ -69,6 +69,9 @@ const App = () => {
       </section>
       <section id='github' className='page'>
         <GitHub/>
+      </section>
+      <section id='certificates' className='page'>
+        <Certificates/>
       </section>
       <section id="projects" className='page'>
         <Projects/>
