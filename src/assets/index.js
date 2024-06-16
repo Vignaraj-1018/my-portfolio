@@ -29,6 +29,8 @@ import globe from './globe-black.svg'
 import globeWhite from './globe-white.svg'
 import externalLink from './external-link-black.svg'
 import externalLinkWhite from './external-link-white.svg'
+import closeBtn from './close-btn.svg'
+import closeBtnBlack from './close-btn-black.svg'
 
 export{
     menuClose,
@@ -62,4 +64,6 @@ export{
     globeWhite,
     externalLink,
     externalLinkWhite,
+    closeBtn,
+    closeBtnBlack
 }

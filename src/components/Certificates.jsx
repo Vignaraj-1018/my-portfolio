@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { certificates } from '../constants'
 import { Tooltip } from "react-tooltip";
+import { closeBtn, externalLinkWhite } from '../assets';
 
 const Certificates = () => {
 
@@ -9,6 +10,13 @@ const Certificates = () => {
     const onClickCertificate = (item) =>{
         setSelectedCertificate(item);
     }
+
+    const handleBackdropClick = (e) => {
+        // Check if the clicked element is the backdrop
+        if (e.target === e.currentTarget) {
+          setSelectedCertificate(null);
+        }
+      };
   return (
     <div className="flex flex-col sm:w-[60vw] w-[75vw] gap-10 relative">
         <div className="flex flex-row items-center gap-5 w-full">
@@ -28,13 +36,34 @@ const Certificates = () => {
                 </div>
             ))}
         </div>
-        {selectedCertificate && 
-            <div className="flex w-[50rem] h-[30rem] bg-primary thin-border absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <div className="relative w-full">
-                    MORE INFO
-                    <span className="flex text-xl cursor-pointer" onClick={() => { setSelectedCertificate(null) }}>X</span>
+        {selectedCertificate &&
+            <>
+                <div className="flex fixed inset-0 bg-black opacity-75 z-30" onClick={(e)=>{handleBackdropClick(e)}}></div>
+                <div className="flex w-full absolute z-50 justify-center">
+                    <div className="w-[30rem] bg-zinc-700 thin-border !p-0" data-aos="fade-up" data-aos-duration='1000' >
+                        <div className="relative w-full">
+                            <div className="flex cursor-pointer absolute right-4 top-4 h-10" onClick={() => { setSelectedCertificate(null) }}>
+                                <img src={closeBtn} alt="Close"/>
+                            </div>
+                            <div className="flex flex-col">
+                                <img src={selectedCertificate.picture} className='flex rounded-t-[10px] object-contain w-[30rem]' alt="Certificate Image" />
+                                <div className="flex flex-col p-4 gap-3">
+                                    <p className="flex text-lg">Issued on: {selectedCertificate.issueDate}</p>
+                                    <p className="flex text-lg">Skills: {selectedCertificate.skills}</p>
+                                    <p className="flex text-lg">{selectedCertificate.description}</p>
+                                </div>
+                                <div className="flex flex-row justify-between items-center p-2">
+                                    <div className="flex flex-row gap-4 bg-secondary cursor-pointer p-3 rounded-3xl" onClick={()=>{window.open(selectedCertificate.credentialLink,"_blank")}}>
+                                        <p className="flex">Show Credential</p>
+                                        <img src={externalLinkWhite} alt="External Link"/>
+                                    </div>
+                                    <div className="flex text-xs">Credential ID: {selectedCertificate.credentialId}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </>
 
         }
         <Tooltip id={'moreInfo'} place="top" content={'Click for More Info'} variant='info'/>
