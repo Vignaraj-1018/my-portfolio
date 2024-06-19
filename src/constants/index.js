@@ -1,4 +1,5 @@
-import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite } from "../assets"
+import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite, hackerrankLogo, courseraLogo } from "../assets"
+import { BackendAPIFreeCodeCamp, FrontendDeveloperReact, GitGithubCoursera, PythonCoursera } from "../assets/certificates"
 import { angularWhite, cWhite, cppWhite, cssWhite, expressjsWhite, flaskWhite, gitWhite, htmlWhite, jsWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
 
 export const techStack = [
@@ -186,4 +187,79 @@ export const workExp = [
         location: "Chennai",
         desc:"Completed a 6-month internship at Smartail as a Software Engineer, developing full stack applications with Angular, Spring Boot, MongoDB, and Python."
     }
+]
+
+export const certificates = [
+    {
+        id:'C1',
+        name:'Backend Development and APIs',
+        organisation:'freeCodeCamp',
+        issueDate: 'May 2024',
+        credentialId: 'vignaraj_1018-bedaa',
+        credentialLink: 'https://freecodecamp.org/certification/Vignaraj_1018/back-end-development-and-apis',
+        skills: 'Node.js, Express.js, MongoDB, Mongoose, RESTFul API',
+        picture: BackendAPIFreeCodeCamp,
+        logo:'https://www.freecodecamp.org/static/ribbon-f4307732bf92855b215beb8c6dbde5cc.svg',
+        description: 'Developed proficiency in using Node.js to build scalable backend applications, enhancing my ability to create efficient server-side solutions. Acquired in-depth knowledge of MongoDB, a leading NoSQL database, for effective data storage and retrieval in web applications.'
+    },
+    {
+        id:'C2',
+        name:'Frontend Developer (React)',
+        organisation:'HackerRank',
+        issueDate: 'May 2024',
+        credentialId: 'f830bd5abd91',
+        credentialLink: 'https://www.hackerrank.com/certificates/f830bd5abd91',
+        skills: 'React.js, CSS, JavaScript, Front-End Development',
+        picture: FrontendDeveloperReact,
+        logo:hackerrankLogo,
+        description: 'The HackerRank React Frontend Developer Role Certification tests your skills in React, JavaScript, and CSS through a one-hour timed assessment to enhance your job market visibility.'
+    },
+    {
+        id:'C3',
+        name:'Crash Course on Python',
+        organisation:'Coursera',
+        issueDate: 'January 2023',
+        credentialId: 'GEZNPPRTGMP8',
+        credentialLink: 'https://www.coursera.org/account/accomplishments/certificate/GEZNPPRTGMP8',
+        skills: 'Python',
+        picture:PythonCoursera ,
+        logo:courseraLogo,
+        description: 'The "Crash Course on Python" by Coursera, created by Google, introduces beginners to Python programming through video lectures, quizzes, and hands-on exercises, covering basic concepts and practical applications.  '
+    },
+    {
+        id:'C3',
+        name:'Introduction to Git and GitHub',
+        organisation:'Coursera',
+        issueDate: 'May 2024',
+        credentialId: 'JTBPUL98CHL9',
+        credentialLink: 'https://coursera.org/verify/JTBPUL98CHL9',
+        skills: 'Git, GitHub',
+        picture:GitGithubCoursera ,
+        logo:courseraLogo,
+        description: 'The "Introduction to Git and GitHub" certification from Coursera, created by Google, is a beginner-level course that teaches the fundamentals of version control using Git and GitHub, focusing on practical skills for software development and collaboration.'
+    },
+    {
+        id:'C3',
+        name:'Crash Course on Python',
+        organisation:'',
+        issueDate: '',
+        credentialId: '',
+        credentialLink: '',
+        skills: '',
+        picture:null ,
+        logo:null,
+        description: ''
+    },
+    {
+        id:'C3',
+        name:'Crash Course on Python',
+        organisation:'',
+        issueDate: '',
+        credentialId: '',
+        credentialLink: '',
+        skills: '',
+        picture:null ,
+        logo:null,
+        description: ''
+    },
 ]

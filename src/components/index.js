@@ -6,6 +6,7 @@ import About from "./About";
 import LeetCode from "./LeetCode";
 import GitHub from "./GitHub";
 import Education from "./Education";
+import Certificates from "./Certificates";
 
 export {
     Navbar,
@@ -15,5 +16,6 @@ export {
     About,
     LeetCode,
     GitHub,
-    Education
+    Education,
+    Certificates
 }

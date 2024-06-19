@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="flex flex-col sm:flex-row-reverse w-full justify-center items-center gap-10">
         <div className="flex" data-aos="fade-left" data-aos-duration='1000'>
-            <img src={myPic} alt="My Picture" className='flex w-[15rem] h-[15rem] rounded-full hover:scale-125 transition' />
+            <img src={myPic} alt="My Picture" className='flex sm:w-[15rem] sm:h-[15rem] w-[13rem] h-[13rem] rounded-full hover:scale-125 transition' />
         </div>
         <div className="flex flex-col sm:w-[60rem] w-full gap-10 p-10 " data-aos="fade-right" data-aos-duration='1000'>
             <div className="flex">
