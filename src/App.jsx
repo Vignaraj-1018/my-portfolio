@@ -29,7 +29,7 @@ const App = () => {
       // console.log("old Session");
     }
     else{
-      // sendViewAnalytics();
+      sendViewAnalytics();
       // console.log("new Session");
       window.sessionStorage.setItem("analyticsSent",true);
     }
@@ -70,9 +70,9 @@ const App = () => {
       <section id='github' className='page'>
         <GitHub/>
       </section>
-      <section id='certificates' className='page'>
+      {/* <section id='certificates' className='page'>
         <Certificates/>
-      </section>
+      </section> */}
       <section id="projects" className='page'>
         <Projects/>
       </section>

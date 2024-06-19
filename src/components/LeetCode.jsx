@@ -141,9 +141,13 @@ const LeetCode = () => {
                     <p className="flex text-secondary font-bold text-3xl">LeetCode</p>
                     <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
                 </div>
-                <div className="flex flex-row flex-wrap gap-10 justify-center">
-                    <div className="flex flex-row gap-5 bg-[#535353] p-5 rounded-xl text-white items-center cursor-pointer w-[20rem] h-[16rem] select-none" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7", "_blank") }} data-aos="fade-right" data-aos-duration='1000'>
-                        <img src={leetCodeProfileData?.profile.userAvatar} alt="LeetCode Profile" className='flex rounded-xl h-28' />
+
+                <div className="flex sm:hidden w-full justify-center">
+                    <img src="https://leetcard.jacoblin.cool/vignaraj03?ext=heatmap" alt="LeetCode Stats" />
+                </div>
+                <div className="sm:flex hidden flex-row flex-wrap gap-10 justify-center">
+                    <div className="flex flex-row gap-5 bg-[#535353] p-5 rounded-xl text-white items-center cursor-pointer w-[20rem] sm:h-[16rem] select-none" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7", "_blank") }} data-aos="fade-right" data-aos-duration='1000'>
+                        <img src={leetCodeProfileData?.profile.userAvatar} alt="LeetCode Profile" className='flex rounded-full h-16 sm:h-32' />
                         <div className="flex flex-col gap-5">
                             <div className="flex flex-col">
                                 <p className='flex text-xl font-bold'>{leetCodeProfileData?.profile.realName}</p>
@@ -214,7 +218,7 @@ const LeetCode = () => {
                         <p className="flex text-2xl font-bold">{leetCodeCalendarData?.streak}</p>
                     </div>
                 </div>
-                <div className="flex sm:justify-center sm:w-full w-[20rem] overflow-auto" data-aos="fade-up" data-aos-duration='1000'>
+                <div className="sm:flex hidden sm:justify-center sm:w-full w-[20rem] overflow-auto" data-aos="fade-up" data-aos-duration='1000'>
                     {showChart && <Timeline range={chartDates} data={chartValues} colorFunc={({ alpha }) => `rgba(0, 256, 0, ${alpha})`}/>}
                 </div>
             </div>

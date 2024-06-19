@@ -31,6 +31,8 @@ import externalLink from './external-link-black.svg'
 import externalLinkWhite from './external-link-white.svg'
 import closeBtn from './close-btn.svg'
 import closeBtnBlack from './close-btn-black.svg'
+import hackerrankLogo from './hackerrank-logo.svg'
+import courseraLogo from './coursera-logo.svg'
 
 export{
     menuClose,
@@ -65,5 +67,7 @@ export{
     externalLink,
     externalLinkWhite,
     closeBtn,
-    closeBtnBlack
+    closeBtnBlack,
+    hackerrankLogo,
+    courseraLogo,
 }
