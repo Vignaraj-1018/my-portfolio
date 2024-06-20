@@ -60,7 +60,7 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col gap-10 sm:w-[60vw] w-[75vw]">
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5" data-aos="zoom-in" data-aos-duration='200'>
         <div className="flex flex-row items-center gap-5 w-full">
           <p className="flex text-secondary font-bold text-3xl">Get in Touch</p>
           <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>

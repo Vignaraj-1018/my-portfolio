@@ -17,12 +17,12 @@ const GitHub = () => {
     },[]);
   return (
     <div className='flex flex-col items-center gap-10 justify-center sm:w-[60vw] w-[75vw]'>
-        <div className="flex flex-row items-center gap-5 w-full">
+        <div className="flex flex-row items-center gap-5 w-full" data-aos="zoom-in" data-aos-duration='200'>
             <p className="flex text-secondary font-bold text-3xl">GitHub</p>
             <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
         </div>
         <div className="flex">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=vignaraj-1018&background=535353&theme=dark&border_radius=13&date_format=M%20j%5B%2C%20Y%5D" alt="GitHubStreakStats" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f1e9631d5480b281d09", "_blank") }} data-aos="fade-right" data-aos-duration='1000'/>
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=vignaraj-1018&background=535353&theme=dark&border_radius=13&date_format=M%20j%5B%2C%20Y%5D" alt="GitHubStreakStats" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f1e9631d5480b281d09", "_blank") }} data-aos="fade-up" data-aos-duration='1000'/>
         </div>
         {/* <div className="flex">
             <img src="https://github-readme-stats.vercel.app/api?username=vignaraj-1018&show_icons=true&theme=dark&bg_color=535353&icon_color=FFF&text_color=FFF&border_radius=13" alt="GitHubStats" className='sm:h-[10rem] h-[6rem] w-[13rem]' onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f1e9631d5480b281d09", "_blank") }} data-aos="fade-left" data-aos-duration='1000'/>

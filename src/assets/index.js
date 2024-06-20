@@ -33,6 +33,7 @@ import closeBtn from './close-btn.svg'
 import closeBtnBlack from './close-btn-black.svg'
 import hackerrankLogo from './hackerrank-logo.svg'
 import courseraLogo from './coursera-logo.svg'
+import sololearnLogo from './sololearn-logo.svg'
 
 export{
     menuClose,
@@ -70,4 +71,5 @@ export{
     closeBtnBlack,
     hackerrankLogo,
     courseraLogo,
+    sololearnLogo,
 }
