@@ -1,5 +1,5 @@
-import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite, hackerrankLogo, courseraLogo } from "../assets"
-import { BackendAPIFreeCodeCamp, FrontendDeveloperReact, GitGithubCoursera, PythonCoursera } from "../assets/certificates"
+import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite, hackerrankLogo, courseraLogo, sololearnLogo } from "../assets"
+import { BackendAPIFreeCodeCamp, CSSBasicHR, FrontendDeveloperReact, GitGithubCoursera, JavascriptBasicHR, JavascriptInterHR, NodeBasicHR, NodeInterHR, ProblemSolvingBasicHR, ProblemSolvingInterHR, PythonBasicHR, PythonCoursera, ReactBasicHR, SololearnCSS, SololearnCpp, SololearnHTML, SololearnJS, SololearnPHP, SololearnPython, SololearnReact } from "../assets/certificates"
 import { angularWhite, cWhite, cppWhite, cssWhite, expressjsWhite, flaskWhite, gitWhite, htmlWhite, jsWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
 
 export const techStack = [
@@ -227,7 +227,7 @@ export const certificates = [
         description: 'The "Crash Course on Python" by Coursera, created by Google, introduces beginners to Python programming through video lectures, quizzes, and hands-on exercises, covering basic concepts and practical applications.  '
     },
     {
-        id:'C3',
+        id:'C4',
         name:'Introduction to Git and GitHub',
         organisation:'Coursera',
         issueDate: 'May 2024',
@@ -239,27 +239,196 @@ export const certificates = [
         description: 'The "Introduction to Git and GitHub" certification from Coursera, created by Google, is a beginner-level course that teaches the fundamentals of version control using Git and GitHub, focusing on practical skills for software development and collaboration.'
     },
     {
-        id:'C3',
-        name:'Crash Course on Python',
-        organisation:'',
-        issueDate: '',
-        credentialId: '',
-        credentialLink: '',
-        skills: '',
-        picture:null ,
-        logo:null,
-        description: ''
+        id:'C5',
+        name:'Python (Basic)',
+        organisation:'HackerRank',
+        issueDate: 'February 2023',
+        credentialId: '3845058cb1f7',
+        credentialLink: 'https://www.hackerrank.com/certificates/3845058cb1f7',
+        skills: 'Python',
+        picture:PythonBasicHR ,
+        logo:hackerrankLogo,
+        description: 'The HackerRank Python (Basic) Skills Certification assesses foundational Python programming knowledge through a 90-minute timed test, enhancing job prospects by verifying core competencies.'
     },
     {
-        id:'C3',
-        name:'Crash Course on Python',
-        organisation:'',
-        issueDate: '',
-        credentialId: '',
-        credentialLink: '',
-        skills: '',
-        picture:null ,
-        logo:null,
-        description: ''
+        id:'C6',
+        name:'Problem Solving (Basic)',
+        organisation:'HackerRank',
+        issueDate: 'February 2023',
+        credentialId: '2e64258c1a8a',
+        credentialLink: 'https://www.hackerrank.com/certificates/2e64258c1a8a',
+        skills: 'Data Structures and Algorithms',
+        picture:ProblemSolvingBasicHR,
+        logo:hackerrankLogo,
+        description: 'The HackerRank Problem Solving (Basic) Skills Certification is a 90-minute timed test that assesses your knowledge of fundamental data structures and algorithms, including arrays, strings, sorting, and searching, to verify and showcase your problem-solving abilities to potential employers.'
     },
+    {
+        id:'C7',
+        name:'React (Basic)',
+        organisation:'HackerRank',
+        issueDate: 'May 2024',
+        credentialId: 'ddbd575f08f3',
+        credentialLink: 'https://www.hackerrank.com/certificates/ddbd575f08f3',
+        skills: 'React',
+        picture:ReactBasicHR ,
+        logo:hackerrankLogo,
+        description: 'The React (Basic) certification from HackerRank verifies your foundational skills in React, including basic routing, rendering elements, state management, handling events, ES6 and JavaScript, and form validation.'
+    },
+    {
+        id:'C8',
+        name:'Problem Solving (Intermediate)',
+        organisation:'HackerRank',
+        issueDate: 'May 2024',
+        credentialId: 'c95d818fe011',
+        credentialLink: 'https://www.hackerrank.com/certificates/c95d818fe011',
+        skills: 'Data Structures and Algorithms',
+        picture:ProblemSolvingInterHR ,
+        logo:hackerrankLogo,
+        description: 'The HackerRank Problem Solving (Intermediate) certification validates your proficiency in core programming concepts like data structures (hash tables, stacks, queues) and algorithms (finding optimal solutions, analyzing complexity).'
+    },
+    {
+        id:'C9',
+        name:'Node (Basic)',
+        organisation:'HackerRank',
+        issueDate: 'May 2024',
+        credentialId: '7eb4e7df4b2e',
+        credentialLink: 'https://www.hackerrank.com/certificates/7eb4e7df4b2e',
+        skills: 'Node.js',
+        picture: NodeBasicHR ,
+        logo:hackerrankLogo,
+        description: 'The HackerRank Node.js (Basic) certification assesses your understanding of fundamental Node.js concepts like modules, callbacks, and file systems.'
+    },
+    {
+        id:'C10',
+        name:'Node.js (Intermediate)',
+        organisation:'HackerRank',
+        issueDate: 'May 2024',
+        credentialId: '126b969ce8e2',
+        credentialLink: 'https://www.hackerrank.com/certificates/126b969ce8e2',
+        skills: 'Node.js',
+        picture:NodeInterHR ,
+        logo:hackerrankLogo,
+        description: 'The HackerRank Node.js (Intermediate) certification tests your ability to build scalable applications using Node.js, focusing on event-driven architecture, concurrency, and packaging.'
+    },
+    {
+        id:'C11',
+        name:'JavaScript (Basic)',
+        organisation:'HackerRank',
+        issueDate: 'May 2024',
+        credentialId: '6a3da10e6e52',
+        credentialLink: 'https://www.hackerrank.com/certificates/6a3da10e6e52',
+        skills: 'JavaScript',
+        picture:JavascriptBasicHR ,
+        logo:hackerrankLogo,
+        description: 'The HackerRank JavaScript (Basic) certification verifies your grasp of foundational JavaScript concepts like variables, functions, loops, and conditionals.'
+    },
+    {
+        id:'C12',
+        name:'JavaScript (Intermediate)',
+        organisation:'HackerRank',
+        issueDate: 'May 2024',
+        credentialId: 'e14839634e5e',
+        credentialLink: 'https://www.hackerrank.com/certificates/e14839634e5e',
+        skills: 'JavaScript',
+        picture:JavascriptInterHR ,
+        logo:hackerrankLogo,
+        description: 'The HackerRank JavaScript (Intermediate) certification validates your competency in advanced JavaScript features like asynchronous programming, object-oriented programming, and design patterns.'
+    },
+    {
+        id:'C13',
+        name:'CSS (Basic)',
+        organisation:'HackerRank',
+        issueDate: 'May 2024',
+        credentialId: 'c48a8ffb2e03',
+        credentialLink: 'https://www.hackerrank.com/certificates/c48a8ffb2e03',
+        skills: 'CSS',
+        picture:CSSBasicHR ,
+        logo:hackerrankLogo,
+        description: 'The HackerRank CSS (Basic) certification assesses your knowledge of fundamental CSS concepts for styling web pages (selectors, box model, text properties).'
+    },
+    {
+        id:'C14',
+        name:'React + Redux',
+        organisation:'Sololearn',
+        issueDate: 'November 2022',
+        credentialId: 'CT-5ZNQ56DF',
+        credentialLink: 'https://www.sololearn.com/certificates/CT-5ZNQ56DF',
+        skills: 'React, Redux',
+        picture:SololearnReact ,
+        logo:sololearnLogo,
+        description: 'Build dynamic user interfaces with React components and manage application state effectively using Redux.'
+    },
+    {
+        id:'C15',
+        name:'Python Data Structures',
+        organisation:'Sololearn',
+        issueDate: 'January 2023',
+        credentialId: 'CT-4NORPHE2',
+        credentialLink: 'https://www.sololearn.com/certificates/CT-4NORPHE2',
+        skills: 'Python, List, Tuple, Set, Dictionary',
+        picture:SololearnPython ,
+        logo:sololearnLogo,
+        description: 'Learn core Python data structures like lists, dictionaries, and sets to organize and manipulate data efficiently.'
+    },
+    {
+        id:'C16',
+        name:'JavaScript',
+        organisation:'Sololearn',
+        issueDate: 'October 2022',
+        credentialId: 'CT-59SOGBDB',
+        credentialLink: 'https://www.sololearn.com/certificates/CT-59SOGBDB',
+        skills: 'JavaScript',
+        picture:SololearnJS ,
+        logo:sololearnLogo,
+        description: 'Grasp essential JavaScript concepts like variables, functions, and DOM manipulation, making web pages interactive.'
+    },
+    {
+        id:'C17',
+        name:'PHP',
+        organisation:'Sololearn',
+        issueDate: 'July 2021',
+        credentialId: 'CT-NOYUEIYE',
+        credentialLink: 'https://www.sololearn.com/certificates/CT-NOYUEIYE',
+        skills: 'PHP',
+        picture:SololearnPHP ,
+        logo:sololearnLogo,
+        description: 'Understand server-side scripting with PHP syntax, variables, and control flow to build dynamic web applications.'
+    },
+    {
+        id:'C18',
+        name:'CSS',
+        organisation:'Sololearn',
+        issueDate: 'October 2022',
+        credentialId: 'CT-IALFH6A7',
+        credentialLink: 'https://www.sololearn.com/certificates/CT-IALFH6A7',
+        skills: 'CSS',
+        picture:SololearnCSS ,
+        logo:sololearnLogo,
+        description: 'Style web pages using CSS selectors, properties, and layout techniques, bringing your web pages to life visually.'
+    },
+    {
+        id:'C19',
+        name:'HTML',
+        organisation:'Sololearn',
+        issueDate: 'July 2021',
+        credentialId: 'CT-HGWUOTRB',
+        credentialLink: 'https://www.sololearn.com/certificates/CT-HGWUOTRB',
+        skills: 'HTML, DOM',
+        picture:SololearnHTML ,
+        logo:sololearnLogo,
+        description: 'Build the foundation of web pages with HTML elements and structure, creating the content users see.'
+    },
+    {
+        id:'C20',
+        name:'C++',
+        organisation:'Sololearn',
+        issueDate: 'September 2022',
+        credentialId: 'CT-XACRN9CL',
+        credentialLink: 'https://www.sololearn.com/certificates/CT-XACRN9CL',
+        skills: 'C++, OOP - Basic',
+        picture:SololearnCpp ,
+        logo:sololearnLogo,
+        description: 'Master C++ syntax, control flow, and object-oriented programming fundamentals to create powerful applications.'
+    },
+
 ]

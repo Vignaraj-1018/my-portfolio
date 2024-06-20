@@ -137,7 +137,7 @@ const LeetCode = () => {
     return (
         <div className='flex flex-col w-full items-center gap-16 justify-center sm:p-20 p-10'>
             <div className="flex flex-col gap-10 sm:w-[60vw] w-[75vw]">
-                <div className="flex flex-row items-center gap-5">
+                <div className="flex flex-row items-center gap-5" data-aos="zoom-in" data-aos-duration='200'>
                     <p className="flex text-secondary font-bold text-3xl">LeetCode</p>
                     <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
                 </div>

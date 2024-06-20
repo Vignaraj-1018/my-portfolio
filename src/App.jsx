@@ -29,7 +29,7 @@ const App = () => {
       // console.log("old Session");
     }
     else{
-      sendViewAnalytics();
+      // sendViewAnalytics();
       // console.log("new Session");
       window.sessionStorage.setItem("analyticsSent",true);
     }
@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <div className='flex flex-col bg-primary text-white gap-40'>
-      <div className="sm:flex flex-col justify-center items-center p-5 hidden bottom-0 fixed left-12 gap-5">
+      <div className="sm:flex flex-col justify-center items-center p-5 hidden bottom-0 fixed left-12 gap-5" data-aos="fade-right" data-aos-duration='1500'>
         <div className="flex flex-col gap-5 select-none">
           {socialMediaWhiteLink.map((item, key)=>(
             <a href={item.link} key={key} data-tooltip-id={item.id}>
@@ -48,7 +48,7 @@ const App = () => {
         </div>
         <div className="flex w-1 border bg-white h-32"></div>
       </div>
-      <div className="sm:flex flex-col justify-center items-center p-5 hidden bottom-0 fixed right-12 gap-5">
+      <div className="sm:flex flex-col justify-center items-center p-5 hidden bottom-0 fixed right-12 gap-5" data-aos="fade-left" data-aos-duration='1500'>
         <span className='flex text-vertical'>vignaraj03@gmail.com</span>
         <div className="flex w-1 border bg-white h-32"></div>
       </div>
@@ -70,9 +70,9 @@ const App = () => {
       <section id='github' className='page'>
         <GitHub/>
       </section>
-      {/* <section id='certificates' className='page'>
+      <section id='certificates' className='page'>
         <Certificates/>
-      </section> */}
+      </section>
       <section id="projects" className='page'>
         <Projects/>
       </section>
