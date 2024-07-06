@@ -12,7 +12,7 @@ const About = () => {
       <div className="flex flex-col gap-5">
         <div className="flex flex-row items-center gap-5">
           <p className="flex text-secondary font-bold text-3xl">About me</p>
-          <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
+          <div className="flex bg-secondary sm:w-56 w-36 h-px"></div>
         </div>
         <div className="flex flex-col gap-10 ">
           <div className="flex flex-col gap-3">

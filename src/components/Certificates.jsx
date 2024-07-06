@@ -54,7 +54,7 @@ const Certificates = () => {
     <div ref={componentRef} className="flex flex-col sm:w-[60vw] w-[75vw] gap-10">
         <div className="flex flex-row items-center gap-5 w-full" data-aos="zoom-in" data-aos-duration='200'>
             <p className="flex text-secondary font-bold text-3xl">Certificates</p>
-            <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
+                <div className="flex bg-secondary sm:w-56 w-36 h-px"></div>
         </div>
         <div className="flex flex-wrap gap-10 justify-center items-center">
             {displayedItems.map((item, key)=>(
