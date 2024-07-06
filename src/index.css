@@ -18,6 +18,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
 .header {
   position: fixed;
   top: 0;

@@ -7,7 +7,7 @@ const Projects = () => {
     <div className="flex flex-col sm:w-[60vw] w-[75vw] gap-10">
       <div className="flex flex-row items-center gap-5 w-full" data-aos="zoom-in" data-aos-duration='200'>
         <p className="flex text-secondary font-bold text-3xl">Projects</p>
-        <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
+                <div className="flex bg-secondary sm:w-56 w-36 h-px"></div>
       </div>
       <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
         {projects.map((project, key)=>(

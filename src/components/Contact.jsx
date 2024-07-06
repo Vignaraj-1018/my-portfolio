@@ -63,9 +63,9 @@ const Contact = () => {
       <div className="flex flex-col gap-5" data-aos="zoom-in" data-aos-duration='200'>
         <div className="flex flex-row items-center gap-5 w-full">
           <p className="flex text-secondary font-bold text-3xl">Get in Touch</p>
-          <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
+          <div className="flex bg-secondary sm:w-56 w-36 h-px"></div>
         </div>
-        <p className="flex text-xl text-slate-400">Have a question or want to work together? Fill out the form below and we'll get back to you as soon as possible.</p>
+        <p className="flex text-xl text-slate-400">Have a question or want to work together? Fill out the form below and I'll get back to you as soon as possible.</p>
       </div>
       <form className='flex flex-col items-center gap-10' data-aos="fade-up" data-aos-duration='1000'>
         <div className="flex sm:flex-row flex-col gap-10 w-full">

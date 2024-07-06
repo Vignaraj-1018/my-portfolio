@@ -19,7 +19,7 @@ const GitHub = () => {
     <div className='flex flex-col items-center gap-10 justify-center sm:w-[60vw] w-[75vw]'>
         <div className="flex flex-row items-center gap-5 w-full" data-aos="zoom-in" data-aos-duration='200'>
             <p className="flex text-secondary font-bold text-3xl">GitHub</p>
-            <div className="flex border-secondary border-2 bg-secondary sm:w-56 w-36 h-1"></div>
+                <div className="flex bg-secondary sm:w-56 w-36 h-px"></div>
         </div>
         <div className="flex">
             <img src="https://github-readme-streak-stats.herokuapp.com/?user=vignaraj-1018&background=535353&theme=dark&border_radius=13&date_format=M%20j%5B%2C%20Y%5D" alt="GitHubStreakStats" onClick={() => { window.open("https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f1e9631d5480b281d09", "_blank") }} data-aos="fade-up" data-aos-duration='1000'/>
