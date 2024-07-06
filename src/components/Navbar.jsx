@@ -1,8 +1,24 @@
 import React, {useState} from 'react'
 import { menuClose, menuCloseWhite, menuOpen, menuOpenWhite, myLogo } from '../assets';
+import axios from 'axios';
 
 const Navbar = () => {
     const [navToggle,setNavToggle] = useState();
+
+    const resumeClick = () =>{
+        const url = "https://helper-api-vignu.el.r.appspot.com/my_website_analytics/website_view";
+        const data ={
+            "name":"My Resume from Portfolio",
+            "url":"https://vignaraj.netlify.app/VIGNARAJ_D.pdf"
+        }
+        axios.post(url,data)
+        .then((resp)=>{
+            // console.log(resp);
+        })
+        .catch((err)=>{
+            console.log(err);
+        });
+    }
   return (
     <>
         <div className={`sm:flex hidden flex-row justify-between items-center shadow-lg p-5 px-10 top-0 left-0 w-full select-none`}>
@@ -27,7 +43,7 @@ const Navbar = () => {
                     <p className="flex cursor-pointer p-1 rounded-lg">Contact</p>
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
                 </a>
-                <a href="https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/6654d6c6accac1d31a06fe00" target='_blank'><div className="flex justify-center items-center px-10 border-secondary border rounded-xl text-secondary hover:text-white hover:bg-secondary">Resume</div></a>
+                <a href="/VIGNARAJ_D.pdf" target='_blank' onClick={resumeClick()}><div className="flex justify-center items-center px-10 border-secondary border rounded-xl text-secondary hover:text-white hover:bg-secondary">Resume</div></a>
             </div>
         </div>
         <div className={`flex sm:hidden flex-row justify-between items-center shadow-lg p-5 top-0 left-0 w-full`}>
@@ -49,7 +65,7 @@ const Navbar = () => {
                         <a href="#about"><p className="flex cursor-pointer hover:text-blue-700">About</p></a>
                         <a href="#projects"><p className="flex cursor-pointer hover:text-blue-700">Projects</p></a>
                         <a href="#contact"><p className="flex cursor-pointer hover:text-blue-700">Contact</p></a>
-                        <a href="https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/6654d6c6accac1d31a06fe00" target='_blank'><div className="flex">Resume</div></a>
+                        <a href="/VIGNARAJ_D.pdf" target='_blank' onClick={resumeClick()}><div className="flex">Resume</div></a>
                     </div>
                 </div>
             </div>
