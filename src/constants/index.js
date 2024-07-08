@@ -1,6 +1,7 @@
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite, hackerrankLogo, courseraLogo, sololearnLogo } from "../assets"
 import { BackendAPIFreeCodeCamp, CSSBasicHR, FrontendDeveloperReact, GitGithubCoursera, JavascriptBasicHR, JavascriptInterHR, NodeBasicHR, NodeInterHR, ProblemSolvingBasicHR, ProblemSolvingInterHR, PythonBasicHR, PythonCoursera, ReactBasicHR, SololearnCSS, SololearnCpp, SololearnHTML, SololearnJS, SololearnPHP, SololearnPython, SololearnReact } from "../assets/certificates"
 import { angularWhite, cWhite, cppWhite, cssWhite, expressjsWhite, flaskWhite, gitWhite, htmlWhite, jsWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
+import { gitHubFoss, intern101, jsQuery } from "../assets/volunteering"
 
 export const techStack = [
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg", name: "C" },
@@ -432,3 +433,30 @@ export const certificates = [
     },
 
 ]
+
+export const volunteeringList = [
+    {
+        title: "Git and GitHub Session",
+        venue:"FOSS Club of CIT",
+        date:"May 2024",
+        description: "Handled a session on Git and GitHub basics, imparting essential knowledge to participants and fostering their understanding of version control.",
+        link:"https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/668c17bfad64e28bc9d11f70",
+        photo:gitHubFoss
+    },
+    {
+        title: "Intern 101: Smartail",
+        venue:"FOSS Club of CIT",
+        date:"April 2024",
+        description: "Shared insights and tips on navigating the internship landscape, helping students prepare for and succeed in their internships.",
+        link:"https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/668c17dcad64e28bc9d11f71",
+        photo:intern101
+    },
+    {
+        title: "JS Query",
+        venue:"FOSS Club of CIT",
+        date:"March 2023",
+        description: "Handled a session on JavaScript basics, imparting knowledge to participants and fostering their understanding of fundamental programming concepts.",
+        link:"https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/668c17f4ad64e28bc9d11f72",
+        photo:jsQuery
+    }
+];
