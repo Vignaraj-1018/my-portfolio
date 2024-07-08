@@ -67,7 +67,7 @@
   height: 100vh;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1650px) {
   .page {
       height: 100%;
   }

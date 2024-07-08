@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import { Contact, Home, Navbar, Projects, About, LeetCode, GitHub, Education, Certificates } from './components'
+import { Contact, Home, Navbar, Projects, About, LeetCode, GitHub, Education, Certificates, Volunteer } from './components'
 import { githubWhite, hackerrankwhite, instagramWhite, leetCodeWhite, linkedinWhite} from './assets'
 import axios from 'axios';
 import { socialMediaWhiteLink } from './constants';
@@ -75,6 +75,9 @@ const App = () => {
       </section>
       <section id="projects" className='page'>
         <Projects/>
+      </section>
+      <section id='volunteer' className='page'>
+        <Volunteer/>
       </section>
       <section id="contact" className='page'>
         <Contact/>
