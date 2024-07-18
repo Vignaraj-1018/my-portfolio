@@ -37,7 +37,7 @@ const Contact = () => {
       setErrors(validationErrors);
       return;
     }
-    console.log(name,email,message);
+    // console.log(name,email,message);
     setName('');
     setEmail('');
     setMessage('');
@@ -48,10 +48,10 @@ const Contact = () => {
       subject:`Message from Portfolio - ${new Date().toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' })}`,
       message: message
     }
-    console.log(data);
+    // console.log(data);
     axios.post('https://helper-api-vignu.el.r.appspot.com/mail_merchant/sendmail/6439b57fa69037f206b91648', data)
       .then((res)=>{
-        console.log(res);
+        // console.log(res);
       })
       .catch((err) =>{
         console.log(err);

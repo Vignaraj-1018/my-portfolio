@@ -1,6 +1,5 @@
 import React from 'react'
-import { github, hackerrank, instagram, leetCode, linkedin, myPic, waveHand } from '../assets'
-import { socialMediaLink, techStack } from '../constants'
+import { myPic } from '../assets'
 
 const Home = () => {
   return (
@@ -19,11 +18,6 @@ const Home = () => {
                 </p>
             </div>
             <div className="flex gap-5">
-                {/* <a href="#contact">
-                    <div className="flex border-2 text-secondary border-secondary hover:text-white hover:bg-secondary p-3 rounded-xl cursor-pointer select-none">
-                        Get in touch
-                    </div>
-                </a> */}
                 <div className="flex border-2 text-secondary border-secondary hover:text-white hover:bg-secondary p-3 rounded-xl cursor-pointer select-none" data-cal-link="vignaraj-d/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view"}'>
                     Let's Innovate Together!
                 </div>

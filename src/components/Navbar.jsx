@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { menuClose, menuCloseWhite, menuOpen, menuOpenWhite, myLogo } from '../assets';
+import { menuCloseWhite, menuOpenWhite, myLogo } from '../assets';
 import axios from 'axios';
 
 const Navbar = () => {

@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { aboutPic, internImg } from '../assets'
-import axios from 'axios'
-import { leetCodeProblemsSolvedQuery, leetCodeProfileDataQuery, leetCodeLanguagesSolvedQuery, leetCodeCalendarDataQuery, techStack, education, techStackWhite } from '../constants'
+import React from 'react'
+import { techStack, techStackWhite } from '../constants'
 
 import './style.css'
 
