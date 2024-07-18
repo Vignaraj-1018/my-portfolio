@@ -88,7 +88,7 @@ const App = () => {
           <span className='flex text-vertical'>vignaraj03@gmail.com</span>
           <div className="flex w-1 border bg-white h-32"></div>
         </div>
-        <div className="flex w-full bg-black sm:backdrop-blur-3xl fixed transition duration-200 ease-in-out z-50" id='navbar' data-aos="fade-down" data-aos-duration='400'>
+        <div className="flex w-full bg-black sm:backdrop-blur-3xl fixed transition duration-200 ease-in-out z-50" id='navbar'>
           <Navbar/>
         </div>
         <section id="home" className='page sm:p-0 pt-24'>
