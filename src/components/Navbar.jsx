@@ -23,36 +23,36 @@ const Navbar = () => {
     <>
         <div className={`sm:flex hidden flex-row justify-between items-center shadow-lg p-5 px-10 top-0 left-0 w-full select-none`}>
             <a href="/#" className='flex flex-row justify-center items-center gap-5'>
-                <img src={myLogo} alt="My Logo" className="flex h-10 w-10 rounded-full"/>
-                <p className="flex text-xl font-bold cursor-pointer">Vignaraj.dev</p>
+                <img src={myLogo} alt="My Logo" className="flex h-10 w-10 rounded-full" data-aos="fade-down-right" data-aos-duration='800'/>
+                <p className="flex text-xl font-bold cursor-pointer" data-aos="fade-down-right" data-aos-duration='600'>Vignaraj.dev</p>
             </a>
             <div className="flex flex-row items-center text-xl font-semibold gap-10">
-                <a href="#about" className='relative group'>
+                <a href="#about" className='relative group' data-aos="fade-down-left" data-aos-duration='600'>
                     <p className="flex cursor-pointer p-1 rounded-lg">About</p>
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
                 </a>
-                <a href="#leetcode" className='relative group'>
+                <a href="#leetcode" className='relative group' data-aos="fade-down-left" data-aos-duration='800'>
                     <p className="flex cursor-pointer p-1 rounded-lg">Stats</p>
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
                 </a>
-                <a href="#projects" className='relative group'>
+                <a href="#projects" className='relative group' data-aos="fade-down-left" data-aos-duration='1000'>
                     <p className="flex cursor-pointer p-1 rounded-lg">Projects</p>
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
                 </a>
-                <a href="#contact" className='relative group'>
+                <a href="#contact" className='relative group' data-aos="fade-down-left" data-aos-duration='1200'>
                     <p className="flex cursor-pointer p-1 rounded-lg">Contact</p>
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
                 </a>
-                <a href="/VIGNARAJ_D.pdf" target='_blank' onClick={resumeClick()}><div className="flex justify-center items-center px-10 border-secondary border rounded-xl text-secondary hover:text-white hover:bg-secondary">Resume</div></a>
+                <a href="/VIGNARAJ_D.pdf" target='_blank'><div className="flex justify-center items-center px-10 border-secondary border rounded-xl text-secondary hover:text-white hover:bg-secondary" data-aos="fade-down-left" data-aos-duration='1400'>Resume</div></a>
             </div>
         </div>
         <div className={`flex sm:hidden flex-row justify-between items-center shadow-lg p-5 top-0 left-0 w-full`}>
             <a href="#home" className='flex flex-row justify-center items-center gap-5'>
-                <img src={myLogo} alt="My Logo" className="flex h-10 w-10 rounded-full"/>
-                <p className="flex text-xl font-bold cursor-pointer">Vignaraj.dev</p>
+                <img src={myLogo} alt="My Logo" className="flex h-10 w-10 rounded-full" data-aos="fade-down-right" data-aos-duration='800'/>
+                <p className="flex text-xl font-bold cursor-pointer" data-aos="fade-down-right" data-aos-duration='600'>Vignaraj.dev</p>
             </a>
             <span className="text-xl" onClick={()=>{setNavToggle(!navToggle)}}>
-                <img className='flex w-10 h-10' src={menuOpenWhite}/>
+                <img className='flex w-10 h-10' src={menuOpenWhite} data-aos="fade-down-left" data-aos-duration='600'/>
             </span>
 
             {navToggle &&
