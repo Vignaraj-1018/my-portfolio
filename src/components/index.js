@@ -8,6 +8,7 @@ import GitHub from "./GitHub";
 import Education from "./Education";
 import Certificates from "./Certificates";
 import Volunteer from "./Volunteer";
+import Loader from "./Loader";
 export {
     Navbar,
     Home,
@@ -18,5 +19,6 @@ export {
     GitHub,
     Education,
     Certificates,
-    Volunteer
+    Volunteer,
+    Loader
 }
