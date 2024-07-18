@@ -1,5 +1,4 @@
 import React from 'react'
-import { education, workExp } from '../constants'
 
 const Education = () => {
   return (

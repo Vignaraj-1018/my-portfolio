@@ -27,28 +27,28 @@ const Certificates = () => {
 
     const displayedItems = certificates.slice(0, sliceSize);
 
-    useEffect(() => {
-    const observer = new IntersectionObserver(
-        (entries) => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-            setSliceSize(initialSliceSize);
-            }
-        });
-        },
-        { threshold: 0.1 }
-    );
+    // useEffect(() => {
+    // const observer = new IntersectionObserver(
+    //     (entries) => {
+    //     entries.forEach(entry => {
+    //         if (!entry.isIntersecting) {
+    //         setSliceSize(initialSliceSize);
+    //         }
+    //     });
+    //     },
+    //     { threshold: 0.1 }
+    // );
 
-    if (componentRef.current) {
-        observer.observe(componentRef.current);
-    }
+    // if (componentRef.current) {
+    //     observer.observe(componentRef.current);
+    // }
 
-    return () => {
-        if (componentRef.current) {
-        observer.unobserve(componentRef.current);
-        }
-    };
-    }, [componentRef]);
+    // return () => {
+    //     if (componentRef.current) {
+    //     observer.unobserve(componentRef.current);
+    //     }
+    // };
+    // }, [componentRef]);
 
   return (
     <div ref={componentRef} className="flex flex-col sm:w-[60vw] w-[75vw] gap-10">

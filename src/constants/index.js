@@ -50,6 +50,16 @@ export const techStackWhite = [
 
 export const projects=[
     {
+        id:35,
+        title:'Tower of Hanoi',
+        code:'https://github.com/Vignaraj-1018/tower-of-hanoi',
+        demo:'https://tower-of-hanoi-vignu.vercel.app/',
+        dp:mailProject,
+        pic:mailProject,
+        techStack:['Next.js'],
+        description:"Tower of Hanoi puzzle game with Next.js, allowing users to select and solve puzzles with 3 to 10 disks. Challenge yourself and see how quickly you can so..."
+    },
+    {
         id:34,
         title:'Grammarly Clone',
         code:'https://github.com/Vignaraj-1018/grammarly-clone',

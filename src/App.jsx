@@ -1,6 +1,5 @@
 import React,{useEffect, useState} from 'react'
 import { Contact, Home, Navbar, Projects, About, LeetCode, GitHub, Education, Certificates, Volunteer, Loader } from './components'
-import { githubWhite, hackerrankwhite, instagramWhite, leetCodeWhite, linkedinWhite} from './assets'
 import axios from 'axios';
 import { socialMediaWhiteLink } from './constants';
 import Aos from 'aos';

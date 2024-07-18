@@ -1,6 +1,6 @@
 import React from 'react'
 import { projects } from '../constants'
-import { externalLink, externalLinkWhite, globeWhite, rightArrow } from '../assets'
+import { externalLinkWhite, globeWhite } from '../assets'
 
 const Projects = () => {
   return (
