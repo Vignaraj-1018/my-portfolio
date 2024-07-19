@@ -65,7 +65,7 @@ const Navbar = () => {
                         <a href="#about"><p className="flex cursor-pointer hover:text-blue-700">About</p></a>
                         <a href="#projects"><p className="flex cursor-pointer hover:text-blue-700">Projects</p></a>
                         <a href="#contact"><p className="flex cursor-pointer hover:text-blue-700">Contact</p></a>
-                        <a href="/VIGNARAJ_D.pdf" target='_blank' onClick={resumeClick()}><div className="flex">Resume</div></a>
+                        <a href="/VIGNARAJ_D.pdf" target='_blank'><div className="flex">Resume</div></a>
                     </div>
                 </div>
             </div>
