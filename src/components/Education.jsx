@@ -16,7 +16,8 @@ const Education = () => {
                         <div className="flex flex-col gap-2 text-xl font-bold">
                             <p className="flex">Software Engineer Intern</p>
                             <p className="flex text-gray-500 dark:text-gray-400">Smartail Pvt. Ltd., Chennai</p>
-                            <p className="flex text-lg text-gray-500 dark:text-gray-400">6-month internship at Smartail as a Software Engineer, developing full stack applications with Angular, Spring Boot, MongoDB, and Python.</p>
+                            <p className="text-sm text-gray-500 dark:text-gray-400"><span className="font-semibold underline underline-offset-2">Tech Stack and Tools:</span> Angular, Spring Boot, Python, MongoDB, VS Code, IntelliJ, GitLab, Docker</p>
+                            <li className="text-sm text-gray-500 dark:text-gray-400">Developed Analytics page, Teacher Configuration, Teacher and Student Dashboard for the Student Assessment  Mobile Application using Angular, Spring Boot, MongoDB Aggregation which improved the visualization of insight analytics</li>
                         </div>
                     </div>
                 </div>

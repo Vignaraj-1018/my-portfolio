@@ -108,6 +108,8 @@ export const leetCodeProblemsSolvedQuery = `${leetCodeAPIUrl}/solvedProblemsCoun
 export const leetCodeLanguagesSolvedQuery = `${leetCodeAPIUrl}/languageProblemsCount/${leetCodeUsername}`;
 export const leetCodeCalendarDataQuery = `${leetCodeAPIUrl}/calendarData/${leetCodeUsername}`;
 
+export const allWebsiteViewAnalytics = `https://helper-api-vignu.el.r.appspot.com/my_website_analytics/get_all_view_counts`;
+
 export const socialMediaLink = [
     {
         name:"LeetCode",
