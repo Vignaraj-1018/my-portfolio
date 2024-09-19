@@ -386,7 +386,7 @@ export const certificates = [
         skills: 'SQL - Joins, Unions, and Sub-Queries',
         picture: SQLIntermediateHR,
         logo: hackerrankLogo,
-        description: 'I earned the **SQL (Intermediate)** certification from HackerRank, demonstrating my ability to handle complex queries, joins, and data manipulation in SQL.'
+        description: 'I earned the SQL (Intermediate) certification from HackerRank, demonstrating my ability to handle complex queries, joins, and data manipulation in SQL.'
     },
     {
         id:'C23',
@@ -398,7 +398,7 @@ export const certificates = [
         skills: 'SQL - Query Optimization, Data Modeling, Indexing, Window Functions, and Pivots',
         picture: SQLAdvancedHR,
         logo: hackerrankLogo,
-        description: 'I earned the **SQL (Advanced)** certification from HackerRank, showcasing my expertise in complex SQL queries, optimization, and advanced database management techniques.'
+        description: 'I earned the SQL (Advanced) certification from HackerRank, showcasing my expertise in complex SQL queries, optimization, and advanced database management techniques.'
     },
     {
         id:'C24',
@@ -410,7 +410,7 @@ export const certificates = [
         skills: 'MVC Frameworks, Components (Angular, Dynamic, Styling), TypeScript, Two Way Binding and Form Validation.',
         picture: AngularBasicHR,
         logo: hackerrankLogo,
-        description: 'I earned the **Angular (Basic)** certification from HackerRank, demonstrating a solid foundation in building dynamic web applications using Angular.'
+        description: 'I earned the Angular (Basic) certification from HackerRank, demonstrating a solid foundation in building dynamic web applications using Angular.'
     },
     {
         id:'C25',
@@ -422,7 +422,7 @@ export const certificates = [
         skills: 'Routing, NgModules, Observables for data transmission and event handling, Dependency Injections, and APIs.',
         picture: AngularIntermediateHR,
         logo: hackerrankLogo,
-        description: 'I earned the **Angular (Intermediate)** certification from HackerRank, showcasing my ability to build more advanced and scalable web applications using Angular.'
+        description: 'I earned the Angular (Intermediate) certification from HackerRank, showcasing my ability to build more advanced and scalable web applications using Angular.'
     },
     {
         id:'C26',
@@ -434,7 +434,7 @@ export const certificates = [
         skills: 'Getting Data from an API and Process using Parameters or Paging.',
         picture: RestAPIIntermediateHR,
         logo: hackerrankLogo,
-        description: 'I achieved the **REST API (Intermediate)** certification from HackerRank, demonstrating my skills in building and managing robust, efficient RESTful APIs.'
+        description: 'I achieved the REST API (Intermediate) certification from HackerRank, demonstrating my skills in building and managing robust, efficient RESTful APIs.'
     },
     {
         id:'C14',
