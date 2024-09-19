@@ -12,8 +12,9 @@
   "dependencies": {
     "@calcom/embed-react": "^1.5.0",
     "aos": "^2.3.4",
-    "axios": "^1.6.8",
+    "axios": "^1.7.7",
     "chart.js": "^4.4.3",
+    "portfolio-vignaraj": "file:",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",

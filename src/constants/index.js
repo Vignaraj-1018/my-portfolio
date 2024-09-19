@@ -1,5 +1,5 @@
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite, hackerrankLogo, courseraLogo, sololearnLogo } from "../assets"
-import { BackendAPIFreeCodeCamp, CSSBasicHR, FrontendDeveloperReact, GitGithubCoursera, JavascriptBasicHR, JavascriptInterHR, NodeBasicHR, NodeInterHR, ProblemSolvingBasicHR, ProblemSolvingInterHR, PythonBasicHR, PythonCoursera, ReactBasicHR, SololearnCSS, SololearnCpp, SololearnHTML, SololearnJS, SololearnPHP, SololearnPython, SololearnReact } from "../assets/certificates"
+import { AngularBasicHR, AngularIntermediateHR, BackendAPIFreeCodeCamp, CSSBasicHR, FrontendDeveloperReact, GitGithubCoursera, JavascriptBasicHR, JavascriptInterHR, NodeBasicHR, NodeInterHR, ProblemSolvingBasicHR, ProblemSolvingInterHR, PythonBasicHR, PythonCoursera, ReactBasicHR, RestAPIIntermediateHR, SQLAdvancedHR, SQLBasicHR, SQLIntermediateHR, SololearnCSS, SololearnCpp, SololearnHTML, SololearnJS, SololearnPHP, SololearnPython, SololearnReact } from "../assets/certificates"
 import { angularWhite, cWhite, cppWhite, cssWhite, expressjsWhite, flaskWhite, gitWhite, htmlWhite, jsWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
 import { gitHubFoss, intern101, jsQuery } from "../assets/volunteering"
 
@@ -57,6 +57,7 @@ export const projects=[
         dp:mailProject,
         pic:mailProject,
         techStack:['Next.js'],
+        dataId: '6697d4090375401bc91dd61e',
         description:"Tower of Hanoi puzzle game with Next.js, allowing users to select and solve puzzles with 3 to 10 disks. Challenge yourself and see how quickly you can so..."
     },
     {
@@ -67,6 +68,7 @@ export const projects=[
         dp:mailProject,
         pic:mailProject,
         techStack:['Next.js', 'Gemini API'],
+        dataId: '665cb26ae17a699f8e43ba7c',
         description:"Grammarly clone, a website and a Chrome extension, that allows users to correct their grammar and spelling mistakes on the go. This project showcases my..."
     },
     {
@@ -77,6 +79,7 @@ export const projects=[
         dp:attendanceProjectLogo,
         pic:attendanceProjectPic,
         techStack:['Angular', 'SpringBoot', 'MongoDB'],
+        dataId: '6686df3a6dd63d57860b198a',
         description:"This Angular-based front-end repository powers a Student Attendance System, providing a user-friendly interface for students to effortlessly track their..."
     },
     {
@@ -87,6 +90,7 @@ export const projects=[
         dp:mailProject,
         pic:mailProject,
         techStack:['React', 'Flask', 'MongoDB'],
+        dataId: "6637eb51faf5c5cd1ffb4a1e",
         description:"Mail Merchant is a free email integration API built with Python Flask and MongoDB. Users can create an account, verify their email address, and obtain an..."
     },
     {
@@ -97,6 +101,7 @@ export const projects=[
         dp:medleyLogo,
         pic:medleyPic,
         techStack:['React', 'Redux', 'ShazamAPI'],
+        dataId: '66db22b0af5b40a453fbe8e2',
         description:"Plays songs with Shazam Core API. Plays the desired song on search. Explore trending songs around us with Geolocation API."
     },
 ]
@@ -358,6 +363,78 @@ export const certificates = [
         picture:CSSBasicHR ,
         logo:hackerrankLogo,
         description: 'The HackerRank CSS (Basic) certification assesses your knowledge of fundamental CSS concepts for styling web pages (selectors, box model, text properties).'
+    },
+    {
+        id:'C21',
+        name:'SQL (Basic)',
+        organisation:'HackerRank',
+        issueDate: 'July 2024',
+        credentialId: '53a26183bfa6',
+        credentialLink: 'https://www.hackerrank.com/certificates/53a26183bfa6',
+        skills: 'SQL - Simple Queries, Relationships, and Aggregators',
+        picture: SQLBasicHR,
+        logo: hackerrankLogo,
+        description: 'I earned the SQL (Basic) certification from HackerRank, showcasing my foundational skills in querying and managing databases efficiently.'
+    },
+    {
+        id:'C22',
+        name:'SQL (Intermediate)',
+        organisation:'HackerRank',
+        issueDate: 'July 2024',
+        credentialId: '4c53c6cb8b6c',
+        credentialLink: 'https://www.hackerrank.com/certificates/4c53c6cb8b6c',
+        skills: 'SQL - Joins, Unions, and Sub-Queries',
+        picture: SQLIntermediateHR,
+        logo: hackerrankLogo,
+        description: 'I earned the **SQL (Intermediate)** certification from HackerRank, demonstrating my ability to handle complex queries, joins, and data manipulation in SQL.'
+    },
+    {
+        id:'C23',
+        name:'SQL (Advanced)',
+        organisation:'HackerRank',
+        issueDate: 'Aug 2024',
+        credentialId: 'e81e7f8c3e9b',
+        credentialLink: 'https://www.hackerrank.com/certificates/e81e7f8c3e9b',
+        skills: 'SQL - Query Optimization, Data Modeling, Indexing, Window Functions, and Pivots',
+        picture: SQLAdvancedHR,
+        logo: hackerrankLogo,
+        description: 'I earned the **SQL (Advanced)** certification from HackerRank, showcasing my expertise in complex SQL queries, optimization, and advanced database management techniques.'
+    },
+    {
+        id:'C24',
+        name:'Angular (Basic)',
+        organisation:'HackerRank',
+        issueDate: 'Aug 2024',
+        credentialId: '1e7a9f75d1ed',
+        credentialLink: 'https://www.hackerrank.com/certificates/1e7a9f75d1ed',
+        skills: 'MVC Frameworks, Components (Angular, Dynamic, Styling), TypeScript, Two Way Binding and Form Validation.',
+        picture: AngularBasicHR,
+        logo: hackerrankLogo,
+        description: 'I earned the **Angular (Basic)** certification from HackerRank, demonstrating a solid foundation in building dynamic web applications using Angular.'
+    },
+    {
+        id:'C25',
+        name:'Angular (Intermediate)',
+        organisation:'HackerRank',
+        issueDate: 'Aug 2024',
+        credentialId: '08933a4f2891',
+        credentialLink: 'https://www.hackerrank.com/certificates/08933a4f2891',
+        skills: 'Routing, NgModules, Observables for data transmission and event handling, Dependency Injections, and APIs.',
+        picture: AngularIntermediateHR,
+        logo: hackerrankLogo,
+        description: 'I earned the **Angular (Intermediate)** certification from HackerRank, showcasing my ability to build more advanced and scalable web applications using Angular.'
+    },
+    {
+        id:'C26',
+        name:'RestAPI (Intermediate)',
+        organisation:'HackerRank',
+        issueDate: 'Aug 2024',
+        credentialId: '810f444bf5bc',
+        credentialLink: 'https://www.hackerrank.com/certificates/810f444bf5bc',
+        skills: 'Getting Data from an API and Process using Parameters or Paging.',
+        picture: RestAPIIntermediateHR,
+        logo: hackerrankLogo,
+        description: 'I achieved the **REST API (Intermediate)** certification from HackerRank, demonstrating my skills in building and managing robust, efficient RESTful APIs.'
     },
     {
         id:'C14',
