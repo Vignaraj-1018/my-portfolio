@@ -18,6 +18,12 @@ import SololearnJS from './Sololearn-JS.png';
 import SololearnPHP from './Sololearn-PHP.jpg';
 import SololearnPython from './Sololearn-Python.png';
 import SololearnReact from './Sololearn-React.jpg'
+import AngularBasicHR from './Angular-Basic-HR.png';
+import AngularIntermediateHR from './Angular-Intermediate-HR.png';
+import RestAPIIntermediateHR from './Rest_API-Intermediate-HR.png';
+import SQLBasicHR from './SQL-Basic-HR.png';
+import SQLIntermediateHR from './SQL-Intermediate-HR.png';
+import SQLAdvancedHR from './SQL-Advanced-HR.png';
 
 export {
     BackendAPIFreeCodeCamp,
@@ -40,4 +46,10 @@ export {
     SololearnPHP,
     SololearnPython,
     SololearnReact,
+    AngularBasicHR,
+    AngularIntermediateHR,
+    RestAPIIntermediateHR,
+    SQLBasicHR,
+    SQLIntermediateHR,
+    SQLAdvancedHR,
 }
