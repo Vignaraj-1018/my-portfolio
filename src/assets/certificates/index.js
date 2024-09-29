@@ -24,6 +24,7 @@ import RestAPIIntermediateHR from './Rest_API-Intermediate-HR.png';
 import SQLBasicHR from './SQL-Basic-HR.png';
 import SQLIntermediateHR from './SQL-Intermediate-HR.png';
 import SQLAdvancedHR from './SQL-Advanced-HR.png';
+import JavaBasicHR from './Java-Basic-HR.png';
 
 export {
     BackendAPIFreeCodeCamp,
@@ -52,4 +53,5 @@ export {
     SQLBasicHR,
     SQLIntermediateHR,
     SQLAdvancedHR,
+    JavaBasicHR
 }

@@ -1,5 +1,5 @@
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite, hackerrankLogo, courseraLogo, sololearnLogo } from "../assets"
-import { AngularBasicHR, AngularIntermediateHR, BackendAPIFreeCodeCamp, CSSBasicHR, FrontendDeveloperReact, GitGithubCoursera, JavascriptBasicHR, JavascriptInterHR, NodeBasicHR, NodeInterHR, ProblemSolvingBasicHR, ProblemSolvingInterHR, PythonBasicHR, PythonCoursera, ReactBasicHR, RestAPIIntermediateHR, SQLAdvancedHR, SQLBasicHR, SQLIntermediateHR, SololearnCSS, SololearnCpp, SololearnHTML, SololearnJS, SololearnPHP, SololearnPython, SololearnReact } from "../assets/certificates"
+import { AngularBasicHR, AngularIntermediateHR, BackendAPIFreeCodeCamp, CSSBasicHR, FrontendDeveloperReact, GitGithubCoursera, JavaBasicHR, JavascriptBasicHR, JavascriptInterHR, NodeBasicHR, NodeInterHR, ProblemSolvingBasicHR, ProblemSolvingInterHR, PythonBasicHR, PythonCoursera, ReactBasicHR, RestAPIIntermediateHR, SQLAdvancedHR, SQLBasicHR, SQLIntermediateHR, SololearnCSS, SololearnCpp, SololearnHTML, SololearnJS, SololearnPHP, SololearnPython, SololearnReact } from "../assets/certificates"
 import { angularWhite, cWhite, cppWhite, cssWhite, expressjsWhite, flaskWhite, gitWhite, htmlWhite, jsWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
 import { gitHubFoss, intern101, jsQuery } from "../assets/volunteering"
 
@@ -428,13 +428,25 @@ export const certificates = [
         id:'C26',
         name:'RestAPI (Intermediate)',
         organisation:'HackerRank',
-        issueDate: 'Aug 2024',
+        issueDate: 'Sep 2024',
         credentialId: '810f444bf5bc',
         credentialLink: 'https://www.hackerrank.com/certificates/810f444bf5bc',
         skills: 'Getting Data from an API and Process using Parameters or Paging.',
         picture: RestAPIIntermediateHR,
         logo: hackerrankLogo,
         description: 'I achieved the REST API (Intermediate) certification from HackerRank, demonstrating my skills in building and managing robust, efficient RESTful APIs.'
+    },
+    {
+        id:'C27',
+        name:'Java (Basic)',
+        organisation:'HackerRank',
+        issueDate: 'Sep 2024',
+        credentialId: '3b5b41ff2612',
+        credentialLink: 'https://www.hackerrank.com/certificates/3b5b41ff2612',
+        skills: 'Classes, Data Structures, Inheritance, Exception Handling.',
+        picture: JavaBasicHR,
+        logo: hackerrankLogo,
+        description: 'I\'ve earned the Java (Basic) certification from HackerRank, showcasing my foundational knowledge of Java programming and problem-solving skills.'
     },
     {
         id:'C14',
