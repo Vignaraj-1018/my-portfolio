@@ -1,5 +1,5 @@
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite, hackerrankLogo, courseraLogo, sololearnLogo } from "../assets"
-import { AngularBasicHR, AngularIntermediateHR, BackendAPIFreeCodeCamp, CSSBasicHR, FrontendDeveloperReact, GitGithubCoursera, JavaBasicHR, JavascriptBasicHR, JavascriptInterHR, NodeBasicHR, NodeInterHR, ProblemSolvingBasicHR, ProblemSolvingInterHR, PythonBasicHR, PythonCoursera, ReactBasicHR, RestAPIIntermediateHR, SQLAdvancedHR, SQLBasicHR, SQLIntermediateHR, SololearnCSS, SololearnCpp, SololearnHTML, SololearnJS, SololearnPHP, SololearnPython, SololearnReact } from "../assets/certificates"
+import { AngularBasicHR, AngularIntermediateHR, BackendAPIFreeCodeCamp, CSSBasicHR, FrontendDeveloperReact, GitGithubCoursera, JavaBasicHR, JavascriptBasicHR, JavascriptInterHR, NodeBasicHR, NodeInterHR, ProblemSolvingBasicHR, ProblemSolvingInterHR, PythonBasicHR, PythonCoursera, ReactBasicHR, RestAPIIntermediateHR, SQLAdvancedHR, SQLBasicHR, SQLIntermediateHR, SoftEngiHR, SoftEngiInternHR, SololearnCSS, SololearnCpp, SololearnHTML, SololearnJS, SololearnPHP, SololearnPython, SololearnReact } from "../assets/certificates"
 import { angularWhite, cWhite, cppWhite, cssWhite, expressjsWhite, flaskWhite, gitWhite, htmlWhite, jsWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
 import { gitHubFoss, intern101, jsQuery } from "../assets/volunteering"
 
@@ -447,6 +447,30 @@ export const certificates = [
         picture: JavaBasicHR,
         logo: hackerrankLogo,
         description: 'I\'ve earned the Java (Basic) certification from HackerRank, showcasing my foundational knowledge of Java programming and problem-solving skills.'
+    },
+    {
+        id:'C28',
+        name:'Software Engineer Intern',
+        organisation:'HackerRank',
+        issueDate: 'Oct 2024',
+        credentialId: '195f73fd7cad',
+        credentialLink: 'https://www.hackerrank.com/certificates/195f73fd7cad',
+        skills: 'Problem solving and SQL.',
+        picture: SoftEngiInternHR,
+        logo: hackerrankLogo,
+        description: 'I\'ve earned the Software Engineer Intern Role certification from HackerRank, showcasing my foundational knowledge of SQL and problem-solving skills.'
+    },
+    {
+        id:'C29',
+        name:'Software Engineer',
+        organisation:'HackerRank',
+        issueDate: 'Nov 2024',
+        credentialId: 'b2e7c58b46c2',
+        credentialLink: 'https://www.hackerrank.com/certificates/b2e7c58b46c2',
+        skills: 'Problem solving, SQL, and REST API.',
+        picture: SoftEngiHR,
+        logo: hackerrankLogo,
+        description: 'I\'ve earned the Software Engineer Role certification from HackerRank, showcasing my foundational knowledge of Problem solving, SQL, and REST API.'
     },
     {
         id:'C14',
