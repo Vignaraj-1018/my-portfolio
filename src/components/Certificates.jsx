@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import { certificates } from '../constants'
 import { Tooltip } from "react-tooltip";
 import { closeBtn, externalLinkWhite } from '../assets';
+import { useNavigate } from 'react-router-dom';
 
-const Certificates = () => {
+const Certificates = ({initialSliceSize}) => {
 
     const [selectedCertificate, setSelectedCertificate] = useState();
 
@@ -17,38 +18,15 @@ const Certificates = () => {
         }
     };
 
-    const initialSliceSize = 5;
-    const [sliceSize, setSliceSize] = useState(initialSliceSize);
     const componentRef = useRef(null);
 
+    const navigate = useNavigate();
+
     const loadMore = () => {
-    setSliceSize(prevSize => prevSize + initialSliceSize);
+        navigate("/certificates");
     };
 
-    const displayedItems = certificates.slice(0, sliceSize);
-
-    // useEffect(() => {
-    // const observer = new IntersectionObserver(
-    //     (entries) => {
-    //     entries.forEach(entry => {
-    //         if (!entry.isIntersecting) {
-    //         setSliceSize(initialSliceSize);
-    //         }
-    //     });
-    //     },
-    //     { threshold: 0.1 }
-    // );
-
-    // if (componentRef.current) {
-    //     observer.observe(componentRef.current);
-    // }
-
-    // return () => {
-    //     if (componentRef.current) {
-    //     observer.unobserve(componentRef.current);
-    //     }
-    // };
-    // }, [componentRef]);
+    const displayedItems = certificates.slice(0, initialSliceSize);
 
   return (
     <div ref={componentRef} className="flex flex-col sm:w-[60vw] w-[75vw] gap-10">
@@ -72,13 +50,11 @@ const Certificates = () => {
                 </div>
             ))}
         </div>
-        {sliceSize < certificates.length && (
-            <div className="flex w-full justify-center" data-aos="fade-up" data-aos-duration='1000'>
-                <div className="flex h-10 w-32 thin-border !border-secondary text-secondary cursor-pointer justify-center items-center" onClick={loadMore}>
-                    Load More
-                </div>
+        {initialSliceSize == 5 && <div className="flex w-full justify-center" data-aos="fade-up" data-aos-duration='1000'>
+            <div className="flex h-10 w-32 thin-border !border-secondary text-secondary cursor-pointer justify-center items-center" onClick={loadMore}>
+                Load More
             </div>
-        )}
+        </div>}
         {selectedCertificate &&
             <div className="modal-container flex fixed left-0 justify-center items-center top-0 w-full h-full bg-[#0000008f] z-30" onClick={handleBackdropClick}>
                 <div className="flex z-50 sm:w-[30em] w-[20rem] bg-zinc-700 rounded-[10px] !p-0" data-aos="zoom-in" data-aos-duration='250'>

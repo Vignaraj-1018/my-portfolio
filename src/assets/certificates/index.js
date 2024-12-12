@@ -25,6 +25,8 @@ import SQLBasicHR from './SQL-Basic-HR.png';
 import SQLIntermediateHR from './SQL-Intermediate-HR.png';
 import SQLAdvancedHR from './SQL-Advanced-HR.png';
 import JavaBasicHR from './Java-Basic-HR.png';
+import SoftEngiInternHR from './Software-Engineer-Intern-HR.png';
+import SoftEngiHR from './Software-Engineer-HR.png';
 
 export {
     BackendAPIFreeCodeCamp,
@@ -53,5 +55,7 @@ export {
     SQLBasicHR,
     SQLIntermediateHR,
     SQLAdvancedHR,
-    JavaBasicHR
+    JavaBasicHR,
+    SoftEngiInternHR,
+    SoftEngiHR,
 }

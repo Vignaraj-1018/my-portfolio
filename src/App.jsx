@@ -2,8 +2,6 @@ import React,{useEffect, useState} from 'react'
 import { Contact, Home, Navbar, Projects, About, LeetCode, GitHub, Education, Certificates, Volunteer, Loader } from './components'
 import axios from 'axios';
 import { socialMediaWhiteLink } from './constants';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
 import { Tooltip } from "react-tooltip";
 
 const App = () => {
@@ -37,7 +35,6 @@ const App = () => {
       // console.log("new Session");
       window.sessionStorage.setItem("analyticsSent",true);
     }
-    Aos.init();
     const handleScroll = () => {
       var prevScrollY = window.scrollY; // Store previous scroll position
 
@@ -106,7 +103,7 @@ const App = () => {
           <GitHub/>
         </section>
         <section id='certificates' className='page'>
-          <Certificates/>
+          <Certificates initialSliceSize={5}/>
         </section>
         <section id="projects" className='page'>
           <Projects/>
