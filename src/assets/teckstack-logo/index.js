@@ -36,6 +36,8 @@ import tsBlack from './ts-black.svg';
 import tsWhite from './ts-white.svg';
 import vscodeBlack from './vscode-black.svg';
 import vscodeWhite from './vscode-white.svg';
+import javaWhite from './java-white.svg';
+import javaBlack from './java-black.svg';
 
 export{
     angularWhite,
@@ -76,4 +78,6 @@ export{
     tsWhite,
     vscodeBlack,
     vscodeWhite,
+    javaBlack,
+    javaWhite
 }

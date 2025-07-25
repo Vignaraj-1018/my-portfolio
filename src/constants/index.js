@@ -1,13 +1,13 @@
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite, hackerrankLogo, courseraLogo, sololearnLogo } from "../assets"
 import { AngularBasicHR, AngularIntermediateHR, BackendAPIFreeCodeCamp, CSSBasicHR, FrontendDeveloperReact, GitGithubCoursera, JavaBasicHR, JavascriptBasicHR, JavascriptInterHR, NodeBasicHR, NodeInterHR, ProblemSolvingBasicHR, ProblemSolvingInterHR, PythonBasicHR, PythonCoursera, ReactBasicHR, RestAPIIntermediateHR, SQLAdvancedHR, SQLBasicHR, SQLIntermediateHR, SoftEngiHR, SoftEngiInternHR, SololearnCSS, SololearnCpp, SololearnHTML, SololearnJS, SololearnPHP, SololearnPython, SololearnReact } from "../assets/certificates"
-import { angularWhite, cWhite, cppWhite, cssWhite, expressjsWhite, flaskWhite, gitWhite, htmlWhite, jsWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
+import { angularWhite, cWhite, cppWhite, cssWhite, expressjsWhite, flaskWhite, gitWhite, htmlWhite, javaWhite, jsWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
 import { gitHubFoss, intern101, jsQuery } from "../assets/volunteering"
 
 export const techStack = [
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg", name: "C" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg", name: "C++" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg", name: "Python" },
-    // { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", name: "java" },
+    { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg", name: "java" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg", name: "HTML5" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg", name: "CSS3" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg", name: "Javascript" },
@@ -46,6 +46,7 @@ export const techStackWhite = [
     { src: reactWhite, name: "React" },
     { src: pythonWhite, name: "Python" },
     { src: mongodbWhite, name: "MongoDB" },
+    { src: javaWhite, name: "Java" },
 ]
 
 export const projects=[
@@ -53,7 +54,7 @@ export const projects=[
         id:35,
         title:'Tower of Hanoi',
         code:'https://github.com/Vignaraj-1018/tower-of-hanoi',
-        demo:'https://tower-of-hanoi-vignu.vercel.app/',
+        demo:'https://tower-of-hanoi.vignaraj.in/',
         dp:mailProject,
         pic:mailProject,
         techStack:['Next.js'],
@@ -64,7 +65,7 @@ export const projects=[
         id:34,
         title:'Grammarly Clone',
         code:'https://github.com/Vignaraj-1018/grammarly-clone',
-        demo:'https://grammarly-clone-vignu.netlify.app/',
+        demo:'https://grammarly-clone.vignaraj.in/',
         dp:mailProject,
         pic:mailProject,
         techStack:['Next.js', 'Gemini API'],
@@ -75,7 +76,7 @@ export const projects=[
         id:33,
         title:'Student Attendance System',
         code:'https://github.com/Vignaraj-1018/Students-Attendance-System-Frontend',
-        demo:'https://students-attendance-system.vercel.app/',
+        demo:'https://students-attendance-system.vignaraj.in/',
         dp:attendanceProjectLogo,
         pic:attendanceProjectPic,
         techStack:['Angular', 'SpringBoot', 'MongoDB'],
@@ -86,59 +87,48 @@ export const projects=[
         id:32,
         title:'Mail Merchant',
         code:'https://github.com/Vignaraj-1018/Mail-Merchant',
-        demo:'https://mail-merchant.netlify.app/',
+        demo:'https://mail-merchant.vignaraj.in/',
         dp:mailProject,
         pic:mailProject,
         techStack:['React', 'Flask', 'MongoDB'],
         dataId: "6637eb51faf5c5cd1ffb4a1e",
         description:"Mail Merchant is a free email integration API built with Python Flask and MongoDB. Users can create an account, verify their email address, and obtain an..."
-    },
-    {
-        id:31,
-        title:'Medley - Music Player',
-        code:'https://github.com/Vignaraj-1018/MEDLEY-Music-Player',
-        demo:'https://medley-web.netlify.app/',
-        dp:medleyLogo,
-        pic:medleyPic,
-        techStack:['React', 'Redux', 'ShazamAPI'],
-        dataId: '66db22b0af5b40a453fbe8e2',
-        description:"Plays songs with Shazam Core API. Plays the desired song on search. Explore trending songs around us with Geolocation API."
-    },
+    }
 ]
 
-const leetCodeAPIUrl = "https://helper-api-vignu.el.r.appspot.com/leetcode_data"
+const leetCodeAPIUrl = "https://api.vignaraj.in/leetcode_data"
 const leetCodeUsername = "vignaraj03"
 export const leetCodeProfileDataQuery = `${leetCodeAPIUrl}/my_profile/${leetCodeUsername}`;
 export const leetCodeProblemsSolvedQuery = `${leetCodeAPIUrl}/solvedProblemsCount/${leetCodeUsername}`;
 export const leetCodeLanguagesSolvedQuery = `${leetCodeAPIUrl}/languageProblemsCount/${leetCodeUsername}`;
 export const leetCodeCalendarDataQuery = `${leetCodeAPIUrl}/calendarData/${leetCodeUsername}`;
 
-export const allWebsiteViewAnalytics = `https://helper-api-vignu.el.r.appspot.com/my_website_analytics/get_all_view_counts`;
+export const allWebsiteViewAnalytics = `https://api.vignaraj.in/my_website_analytics/get_all_view_counts`;
 
 export const socialMediaLink = [
     {
         name:"LeetCode",
-        link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7",
+        link: "https://api.vignaraj.in/redirect_links/redirect/66549f0a1a0309060e2557f7",
         logo: leetCode
     },
     {
         name:"GitHub",
-        link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f1e9631d5480b281d09",
+        link: "https://api.vignaraj.in/redirect_links/redirect/66549f1e9631d5480b281d09",
         logo: github
     },
     {
         name:"LinkedIn",
-        link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f32430f12d8ca9dcf2b",
+        link: "https://api.vignaraj.in/redirect_links/redirect/66549f32430f12d8ca9dcf2b",
         logo: linkedin
     },
     {
         name:"Instagram",
-        link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f429631d5480b281d0a",
+        link: "https://api.vignaraj.in/redirect_links/redirect/66549f429631d5480b281d0a",
         logo: instagram
     },
     {
         name:"Hackerrank",
-        link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f5e2e1a11bdfd26cf33",
+        link: "https://api.vignaraj.in/redirect_links/redirect/66549f5e2e1a11bdfd26cf33",
         logo: hackerrank
     },
 ]
@@ -147,31 +137,31 @@ export const socialMediaWhiteLink = [
     {
         id:"SM1",
         name:"LeetCode",
-        link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f0a1a0309060e2557f7",
+        link: "https://api.vignaraj.in/redirect_links/redirect/66549f0a1a0309060e2557f7",
         logo: leetCodeWhite
     },
     {
         id:"SM2",
         name:"GitHub",
-        link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f1e9631d5480b281d09",
+        link: "https://api.vignaraj.in/redirect_links/redirect/66549f1e9631d5480b281d09",
         logo: githubWhite
     },
     {
         id:"SM3",
         name:"LinkedIn",
-        link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f32430f12d8ca9dcf2b",
+        link: "https://api.vignaraj.in/redirect_links/redirect/66549f32430f12d8ca9dcf2b",
         logo: linkedinWhite
     },
     {
         id:"SM4",
         name:"Instagram",
-        link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f429631d5480b281d0a",
+        link: "https://api.vignaraj.in/redirect_links/redirect/66549f429631d5480b281d0a",
         logo: instagramWhite
     },
     {
         id:"SM5",
         name:"HackerRank",
-        link: "https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/66549f5e2e1a11bdfd26cf33",
+        link: "https://api.vignaraj.in/redirect_links/redirect/66549f5e2e1a11bdfd26cf33",
         logo: hackerrankwhite
     },
 ]
@@ -198,6 +188,13 @@ export const education = [
 ]
 
 export const workExp = [
+    {
+        name:"Software Engineer Intern",
+        organisation: "Checkpoint Systems Software Pvt. Ltd.",
+        duration: "Jan 2025 - Present",
+        location: "Bengaluru",
+        desc:"Currently pursuing an internship as a DevOps Intern, working with cloud-native technologies like Docker, Kubernetes, Azure Cloud, Terraform, Ansible, and ArgoCD to automate infrastructure and streamline deployments."
+    },
     {
         name:"Software Engineer Intern",
         organisation: "Smartail Pvt. Ltd.",
@@ -565,7 +562,7 @@ export const volunteeringList = [
         venue:"FOSS Club of CIT",
         date:"May 2024",
         description: "Handled a session on Git and GitHub basics, imparting essential knowledge to participants and fostering their understanding of version control.",
-        link:"https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/668c17bfad64e28bc9d11f70",
+        link:"https://api.vignaraj.in/redirect_links/redirect/668c17bfad64e28bc9d11f70",
         photo:gitHubFoss
     },
     {
@@ -573,7 +570,7 @@ export const volunteeringList = [
         venue:"FOSS Club of CIT",
         date:"April 2024",
         description: "Shared insights and tips on navigating the internship landscape, helping students prepare for and succeed in their internships.",
-        link:"https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/668c17dcad64e28bc9d11f71",
+        link:"https://api.vignaraj.in/redirect_links/redirect/668c17dcad64e28bc9d11f71",
         photo:intern101
     },
     {
@@ -581,7 +578,7 @@ export const volunteeringList = [
         venue:"FOSS Club of CIT",
         date:"March 2023",
         description: "Handled a session on JavaScript basics, imparting knowledge to participants and fostering their understanding of fundamental programming concepts.",
-        link:"https://helper-api-vignu.el.r.appspot.com/redirect_links/redirect/668c17f4ad64e28bc9d11f72",
+        link:"https://api.vignaraj.in/redirect_links/redirect/668c17f4ad64e28bc9d11f72",
         photo:jsQuery
     }
 ];
