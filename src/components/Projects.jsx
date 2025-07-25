@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { projects } from '../constants'
-import { externalLinkWhite, globeWhite } from '../assets'
+import { externalLinkWhite, githubWhite, globeWhite } from '../assets'
 import axios from 'axios'
 
 const Projects = () => {
 
   const getViewCount = async (id) => {
     try {
-      const resp = await axios.get(`https://helper-api-vignu.el.r.appspot.com/my_website_analytics/get_view_count?id=${id}`);
+      const resp = await axios.get(`https://api.vignaraj.in/my_website_analytics/get_view_count?id=${id}`);
       return resp.data.view_count;
     } catch (err) {
       console.log(err);
@@ -50,13 +50,16 @@ const Projects = () => {
       </div>
       <div className="flex flex-row flex-wrap gap-3 items-center justify-center">
         {projectsData.map((project, key)=>(
-          <div className="flex flex-col gap-4 thin-border w-[30rem] cursor-pointer select-none" key={key} onClick={()=>window.open(project.code, "_blank")} data-aos="fade-up" data-aos-duration='1000'>
+          <div className="flex flex-col gap-4 thin-border w-[30rem] cursor-pointer select-none" key={key} data-aos="fade-up" data-aos-duration='1000'>
             <div className="flex flex-row justify-between items-center w-full">
               <div className="flex flex-row gap-3">
                 <img src={globeWhite} alt="Website" />
                 <p className="flex text-xl font-bold">{project.title}</p>
               </div>
-              <a href={project.demo} target='_blank'><img src={externalLinkWhite} alt="External Link" className='flex hover:scale-110'/></a>
+              <div className="flex gap-2 justify-center items-center">
+                <a href={project.code} target='_blank'><img src={githubWhite} alt="External Link" className='flex hover:scale-110'/></a>
+                <a href={project.demo} target='_blank'><img src={externalLinkWhite} alt="External Link" className='flex hover:scale-110'/></a>
+              </div>
             </div>
             <p className="flex text-slate-400 sm:h-[5rem]">{project.description}</p>
             <div className="flex flex-wrap flex-row gap-2">

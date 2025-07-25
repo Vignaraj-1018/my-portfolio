@@ -6,10 +6,10 @@ import { Tooltip } from "react-tooltip";
 
 const App = () => {
   const sendViewAnalytics=()=>{
-    const url = "https://helper-api-vignu.el.r.appspot.com/my_website_analytics/website_view";
+    const url = "https://api.vignaraj.in/my_website_analytics/website_view";
     const data ={
       "name":"My Portfolio",
-      "url":"https://vignaraj.netlify.app/"
+      "url":"https://vignaraj.in/"
     }
     axios.post(url,data)
     .then((resp)=>{

@@ -49,7 +49,7 @@ const Contact = () => {
       message: message
     }
     // console.log(data);
-    axios.post('https://helper-api-vignu.el.r.appspot.com/mail_merchant/sendmail/6439b57fa69037f206b91648', data)
+    axios.post('https://api.vignaraj.in/mail_merchant/sendmail/6439b57fa69037f206b91648', data)
       .then((res)=>{
         // console.log(res);
       })
@@ -86,7 +86,7 @@ const Contact = () => {
           {errors.message && <p className='flex text-red-500 justify-center'>{errors.message}</p>}
         </div>
         <p className="flex text-xl text-slate-400 gap-1 flex-wrap">
-          Powered by my <a href="https://mail-merchant.netlify.app/" target='_blank' className='underline underline-offset-4'>Mail-Merchant</a> — which will send your message directly to my inbox.
+          Powered by my <a href="https://mail-merchant.vignaraj.in/" target='_blank' className='underline underline-offset-4'>Mail-Merchant</a> — which will send your message directly to my inbox.
         </p>
         <div className='flex border-2 text-secondary border-secondary hover:text-white hover:bg-secondary p-3 rounded-xl hover:scale-110 cursor-pointer select-none w-28 items-center justify-center' onClick={(e)=>(handleSubmit(e.preventDefault))}>Submit</div>
       </form>

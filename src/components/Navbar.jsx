@@ -6,10 +6,10 @@ const Navbar = () => {
     const [navToggle,setNavToggle] = useState();
 
     const resumeClick = () =>{
-        const url = "https://helper-api-vignu.el.r.appspot.com/my_website_analytics/website_view";
+        const url = "https://api.vignaraj.in/my_website_analytics/website_view";
         const data ={
             "name":"My Resume from Portfolio",
-            "url":"https://vignaraj.netlify.app/VIGNARAJ_D.pdf"
+            "url":"https://vignaraj.in/VIGNARAJ_D.pdf"
         }
         axios.post(url,data)
         .then((resp)=>{
@@ -24,7 +24,7 @@ const Navbar = () => {
         <div className={`sm:flex hidden flex-row justify-between items-center shadow-lg p-5 px-10 top-0 left-0 w-full select-none`}>
             <a href="/#" className='flex flex-row justify-center items-center gap-5'>
                 <img src={myLogo} alt="My Logo" className="flex h-10 w-10 rounded-full" data-aos="fade-down-right" data-aos-duration='800'/>
-                <p className="flex text-xl font-bold cursor-pointer" data-aos="fade-down-right" data-aos-duration='600'>Vignaraj.dev</p>
+                <p className="flex text-xl font-bold cursor-pointer" data-aos="fade-down-right" data-aos-duration='600'>Vignaraj D</p>
             </a>
             <div className="flex flex-row items-center text-xl font-semibold gap-10">
                 <a href="#about" className='relative group' data-aos="fade-down-left" data-aos-duration='600'>
