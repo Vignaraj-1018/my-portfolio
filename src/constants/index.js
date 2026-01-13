@@ -61,17 +61,17 @@ export const projects=[
         dataId: '6697d4090375401bc91dd61e',
         description:"Tower of Hanoi puzzle game with Next.js, allowing users to select and solve puzzles with 3 to 10 disks. Challenge yourself and see how quickly you can so..."
     },
-    {
-        id:34,
-        title:'Grammarly Clone',
-        code:'https://github.com/Vignaraj-1018/grammarly-clone',
-        demo:'https://grammarly-clone.vignaraj.in/',
-        dp:mailProject,
-        pic:mailProject,
-        techStack:['Next.js', 'Gemini API'],
-        dataId: '665cb26ae17a699f8e43ba7c',
-        description:"Grammarly clone, a website and a Chrome extension, that allows users to correct their grammar and spelling mistakes on the go. This project showcases my..."
-    },
+    // {
+    //     id:34,
+    //     title:'Grammarly Clone',
+    //     code:'https://github.com/Vignaraj-1018/grammarly-clone',
+    //     demo:'https://grammarly-clone.vignaraj.in/',
+    //     dp:mailProject,
+    //     pic:mailProject,
+    //     techStack:['Next.js', 'Gemini API'],
+    //     dataId: '665cb26ae17a699f8e43ba7c',
+    //     description:"Grammarly clone, a website and a Chrome extension, that allows users to correct their grammar and spelling mistakes on the go. This project showcases my..."
+    // },
     {
         id:33,
         title:'Student Attendance System',
