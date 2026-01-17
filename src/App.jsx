@@ -96,12 +96,6 @@ const App = () => {
         <section id="education" className='page'>
           <Education/>
         </section>
-        <section id="leetcode" className='page'>
-          <LeetCode/>
-        </section>
-        <section id='github' className='page'>
-          <GitHub/>
-        </section>
         <section id='certificates' className='page'>
           <Certificates initialSliceSize={5}/>
         </section>
