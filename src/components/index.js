@@ -9,6 +9,8 @@ import Education from "./Education";
 import Certificates from "./Certificates";
 import Volunteer from "./Volunteer";
 import Loader from "./Loader";
+import WorkExperience from "./WorkExperience";
+
 export {
     Navbar,
     Home,
@@ -20,5 +22,6 @@ export {
     Education,
     Certificates,
     Volunteer,
-    Loader
+    Loader,
+    WorkExperience
 }

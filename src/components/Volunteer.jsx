@@ -13,7 +13,7 @@ const Volunteer = () => {
         </div>
         <div className="flex flex-wrap gap-5 justify-center items-center" data-aos="fade-up" data-aos-duration='1000'>
           {volunteeringList.map((item, key)=>(
-            <div className="flex thin-border flex-col gap-3 !p-0 h-[30rem] w-[25rem]" key={key}>
+            <div className="flex thin-border flex-col gap-3 !p-0 h-[30rem] w-[25rem] select-none" key={key}>
               <img src={item.photo} alt={item.title} className="flex rounded-t-[10px] object-contain w-[25rem]" />
               <div className="flex flex-col gap-1 p-3">
                 <p className="flex text-2xl font-bold">{item.title}</p>

@@ -67,7 +67,7 @@ const Contact = () => {
         </div>
         <p className="flex text-xl text-slate-400">Have a question or want to work together? Fill out the form below and I'll get back to you as soon as possible.</p>
       </div>
-      <form className='flex flex-col items-center gap-10' data-aos="fade-up" data-aos-duration='1000'>
+      <form className='flex flex-col items-center gap-10 select-none' data-aos="fade-up" data-aos-duration='1000'>
         <div className="flex sm:flex-row flex-col gap-10 w-full">
           <div className="flex flex-col gap-1 sm:w-[50%]">
             <label className="flex text-xl">Name</label>
@@ -85,11 +85,13 @@ const Contact = () => {
           <textarea className='flex bg-primary thin-border min-h-40' placeholder='Enter your message' value={message} onChange={(e)=>(setMessage(e.target.value))}></textarea>
           {errors.message && <p className='flex text-red-500 justify-center'>{errors.message}</p>}
         </div>
+      </form>
+      <div className="flex w-full flex-col gap-10 items-center">
         <p className="flex text-xl text-slate-400 gap-1 flex-wrap">
           Powered by my <a href="https://mail-merchant.vignaraj.in/" target='_blank' className='underline underline-offset-4'>Mail-Merchant</a> — which will send your message directly to my inbox.
         </p>
         <div className='flex border-2 text-secondary border-secondary hover:text-white hover:bg-secondary p-3 rounded-xl hover:scale-110 cursor-pointer select-none w-28 items-center justify-center' onClick={(e)=>(handleSubmit(e.preventDefault))}>Submit</div>
-      </form>
+      </div>
     </div>
   )
 }

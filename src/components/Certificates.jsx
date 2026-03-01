@@ -34,15 +34,15 @@ const Certificates = ({initialSliceSize}) => {
             <p className="flex text-secondary font-bold text-3xl">Certificates</p>
                 <div className="flex bg-secondary sm:w-56 w-36 h-px"></div>
         </div>
-        <div className="flex flex-wrap gap-10 justify-center items-center">
+        <div className="flex flex-row flex-wrap sm:gap-10 gap-3 justify-center items-center">
             {displayedItems.map((item, key)=>(
-                <div className="flex flex-col justify-center h-[10rem] gap-5 w-[20rem] rounded-lg thin-border cursor-pointer" key={key} data-tooltip-id={'moreInfo'} data-aos="fade-up" data-aos-duration='1000' onClick={()=>{onClickCertificate(item)}}>
-                    <div className="flex flex-row gap-5">
-                        <div className="flex h-16 w-20 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800">
-                            <img src={item.logo} alt={item.name} className="h-10 w-10 object-contain"/>
+                <div className="flex flex-col justify-center gap-2 sm:h-[10rem] w-[20rem] rounded-lg thin-border cursor-pointer" key={key} data-tooltip-id={'moreInfo'} data-aos="fade-up" data-aos-duration='1000' onClick={()=>{onClickCertificate(item)}}>
+                    <div className="flex flex-row gap-5 sm:justify-center items-center">
+                        <div className="flex sm:h-16 sm:w-20 h-10 w-10 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800">
+                            <img src={item.logo} alt={item.name} className="sm:h-10 sm:w-10 h-5 w-5 object-contain"/>
                         </div>
-                        <div className="flex flex-col gap-2 w-[15rem]">
-                            <h3 className="text-lg font-semibold">{item.name}</h3>
+                        <div className="flex flex-col gap-2">
+                            <h3 className="sm:text-lg text-sm font-semibold">{item.name}</h3>
                             <p className="text-sm text-gray-500 dark:text-gray-400">{item.organisation}</p>
                         </div>
                     </div>

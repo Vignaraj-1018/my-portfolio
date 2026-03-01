@@ -38,6 +38,22 @@ import vscodeBlack from './vscode-black.svg';
 import vscodeWhite from './vscode-white.svg';
 import javaWhite from './java-white.svg';
 import javaBlack from './java-black.svg';
+import ansibleWhite from './ansible-white.svg';
+import ansibleBlack from './ansible-black.svg';
+import argocdWhite from './argocd-white.svg';
+import argocdBlack from './argocd-black.svg';
+import azureWhite from './azure-white.svg';
+import azureBlack from './azure-black.svg';
+import dockerWhite from './docker-white.svg';
+import dockerBlack from './docker-black.svg';
+import helmWhite from './helm-white.svg';
+import helmBlack from './helm-black.svg';
+import kubernetesWhite from './kubernetes-white.svg';
+import kubernetesBlack from './kubernetes-black.svg';
+import terraformWhite from './terraform-white.svg';
+import terraformBlack from './terraform-black.svg';
+
+
 
 export{
     angularWhite,
@@ -79,5 +95,19 @@ export{
     vscodeBlack,
     vscodeWhite,
     javaBlack,
-    javaWhite
+    javaWhite,
+    ansibleBlack,
+    ansibleWhite,
+    argocdBlack,
+    argocdWhite,
+    azureBlack,
+    azureWhite,
+    dockerBlack,
+    dockerWhite,
+    helmBlack,
+    helmWhite,
+    kubernetesBlack,
+    kubernetesWhite,
+    terraformBlack,
+    terraformWhite
 }

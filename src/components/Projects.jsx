@@ -64,7 +64,7 @@ const Projects = () => {
             <p className="flex text-slate-400 sm:h-[5rem]">{project.description}</p>
             <div className="flex flex-wrap flex-row gap-2">
               {project.techStack.map((item, key)=>(
-                <div className="flex p-1 bg-[#3aabfd1a] text-secondary text-semibold text-lg rounded-xl" key={key}>{item}</div>
+                <div className="flex p-2 bg-[#3aabfd1a] text-secondary text-semibold text-base rounded-xl" key={key}>{item}</div>
               ))}
             </div>
             <div className="flex flex-row gap-2 text-sm">

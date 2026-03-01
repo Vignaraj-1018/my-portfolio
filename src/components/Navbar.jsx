@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import { menuCloseWhite, menuOpenWhite, myLogo } from '../assets';
+import { menuCloseWhite, menuOpenWhite, myLogo, navigateWWhite } from '../assets';
 import axios from 'axios';
+import { navigationList } from '../constants';
 
 const Navbar = () => {
     const [navToggle,setNavToggle] = useState();
@@ -31,8 +32,8 @@ const Navbar = () => {
                     <p className="flex cursor-pointer p-1 rounded-lg">About</p>
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
                 </a>
-                <a href="#leetcode" className='relative group' data-aos="fade-down-left" data-aos-duration='800'>
-                    <p className="flex cursor-pointer p-1 rounded-lg">Stats</p>
+                <a href="#workExp" className='relative group' data-aos="fade-down-left" data-aos-duration='800'>
+                    <p className="flex cursor-pointer p-1 rounded-lg">Work</p>
                     <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-500 transition-transform transform origin-left scale-x-0 group-hover:scale-x-100"></span>
                 </a>
                 <a href="#projects" className='relative group' data-aos="fade-down-left" data-aos-duration='1000'>
@@ -49,7 +50,7 @@ const Navbar = () => {
         <div className={`flex sm:hidden flex-row justify-between items-center shadow-lg p-5 top-0 left-0 w-full`}>
             <a href="#home" className='flex flex-row justify-center items-center gap-5'>
                 <img src={myLogo} alt="My Logo" className="flex h-10 w-10 rounded-full" data-aos="fade-down-right" data-aos-duration='800'/>
-                <p className="flex text-xl font-bold cursor-pointer" data-aos="fade-down-right" data-aos-duration='600'>Vignaraj.dev</p>
+                <p className="flex text-xl font-bold cursor-pointer" data-aos="fade-down-right" data-aos-duration='600'>Vignaraj D</p>
             </a>
             <span className="text-xl" onClick={()=>{setNavToggle(!navToggle)}}>
                 <img className='flex w-10 h-10' src={menuOpenWhite} data-aos="fade-down-left" data-aos-duration='600'/>
@@ -57,15 +58,20 @@ const Navbar = () => {
 
             {navToggle &&
             <div className="flex absolute top-0 right-0 w-[100vh] h-[100vh] z-[100] bg-[#433d3d9c]" onClick={()=>{setNavToggle(!navToggle)}}>
-                <div className={`flex flex-col absolute h-[100vh] w-[10rem] top-0 right-0 bg-[#010409]`} >
+                <div className={`flex flex-col absolute h-[100vh] w-[15rem] top-0 right-0 bg-[#03070f]`} >
                     <div className="flex justify-end text-xl mr-5 mt-5" onClick={()=>{setNavToggle(!navToggle)}}>
                         <img className='flex w-10 h-10' src={menuCloseWhite}/>
                     </div>
                     <div className="flex flex-col text-xl font-semibold gap-10 p-10">
-                        <a href="#about"><p className="flex cursor-pointer hover:text-blue-700">About</p></a>
-                        <a href="#projects"><p className="flex cursor-pointer hover:text-blue-700">Projects</p></a>
-                        <a href="#contact"><p className="flex cursor-pointer hover:text-blue-700">Contact</p></a>
-                        <a href="/VIGNARAJ_D.pdf" target='_blank'><div className="flex">Resume</div></a>
+                        {navigationList.map((item,key)=>(
+                            <a href={item.destination} className='flex flex-row items-center  p-3 gap-5 border-slate-600 border-[1px] rounded-xl' key={key}>
+                                <img src={navigateWWhite} alt="Navigate" className="flex " />
+                                <p className="flex cursor-pointer hover:text-blue-700">{item.name}</p>
+                            </a>
+                        ))}
+                        <div className="flex justify-center items-center p-3 border-secondary border rounded-xl text-secondary">
+                            <a href="/VIGNARAJ_D.pdf" target='_blank'>Resume</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import { Contact, Home, Navbar, Projects, About, LeetCode, GitHub, Education, Certificates, Volunteer, Loader } from './components'
+import { Contact, Home, Navbar, Projects, About, LeetCode, GitHub, Education, Certificates, Volunteer, Loader, WorkExperience } from './components'
 import axios from 'axios';
 import { socialMediaWhiteLink } from './constants';
 import { Tooltip } from "react-tooltip";
@@ -92,6 +92,9 @@ const App = () => {
         </section>
         <section id="about" className='page'>
           <About/>
+        </section>
+        <section id="workExp" className='page'>
+          <WorkExperience/>
         </section>
         <section id="education" className='page'>
           <Education/>

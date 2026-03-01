@@ -1,6 +1,6 @@
 import { medleyPic,attendanceProjectPic, attendanceProjectLogo, medleyLogo, mailProject, leetCode, github, linkedin, instagram, hackerrank, leetCodeWhite, githubWhite, linkedinWhite, instagramWhite, hackerrankwhite, hackerrankLogo, courseraLogo, sololearnLogo } from "../assets"
 import { AngularBasicHR, AngularIntermediateHR, BackendAPIFreeCodeCamp, CSSBasicHR, FrontendDeveloperReact, GitGithubCoursera, JavaBasicHR, JavascriptBasicHR, JavascriptInterHR, NodeBasicHR, NodeInterHR, ProblemSolvingBasicHR, ProblemSolvingInterHR, PythonBasicHR, PythonCoursera, ReactBasicHR, RestAPIIntermediateHR, SQLAdvancedHR, SQLBasicHR, SQLIntermediateHR, SoftEngiHR, SoftEngiInternHR, SololearnCSS, SololearnCpp, SololearnHTML, SololearnJS, SololearnPHP, SololearnPython, SololearnReact } from "../assets/certificates"
-import { angularWhite, cWhite, cppWhite, cssWhite, expressjsWhite, flaskWhite, gitWhite, htmlWhite, javaWhite, jsWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
+import { angularWhite, ansibleWhite, argocdWhite, azureWhite, cWhite, cppWhite, cssWhite, dockerWhite, expressjsWhite, flaskWhite, gitWhite, helmWhite, htmlWhite, javaWhite, jsWhite, kubernetesWhite, mongodbWhite, nextjsWhite, nodejsWhite, pythonWhite, reactWhite, springbootWhite, tailwindcssWhite, terraformWhite, tsWhite, vscodeWhite } from "../assets/teckstack-logo"
 import { gitHubFoss, intern101, jsQuery } from "../assets/volunteering"
 
 export const techStack = [
@@ -24,6 +24,13 @@ export const techStack = [
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg", name: "Next.js" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg", name: "ExpressJS" },
     { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg", name: "VSCode" },
+    { src: "", name: "Ansible" },
+    { src: "", name: "ArgoCD" },
+    { src: "", name: "Azure Cloud" },
+    { src: "", name: "Docker" },
+    { src: "", name: "Helm Charts" },
+    { src: "", name: "Kubernetes" },
+    { src: "", name: "Terraform" },
 ]
 
 export const techStackWhite = [
@@ -47,6 +54,32 @@ export const techStackWhite = [
     { src: pythonWhite, name: "Python" },
     { src: mongodbWhite, name: "MongoDB" },
     { src: javaWhite, name: "Java" },
+    { src: kubernetesWhite, name: "Kubernetes" },
+    { src: ansibleWhite, name: "Ansible" },
+    { src: argocdWhite, name: "ArgoCD" },
+    { src: azureWhite, name: "Azure Cloud" },
+    { src: dockerWhite, name: "Docker" },
+    { src: helmWhite, name: "Helm Charts" },
+    { src: terraformWhite, name: "Terraform" },
+]
+
+export const navigationList = [
+    {
+        name: "About",
+        destination: "#about"
+    },
+    {
+        name: "Projects",
+        destination: "#projects"
+    },
+    {
+        name: "Work",
+        destination: "#workExp"
+    },
+    {
+        name: "Contact",
+        destination: "#contact"
+    }
 ]
 
 export const projects=[
@@ -168,39 +201,54 @@ export const socialMediaWhiteLink = [
 
 export const education = [
     {
-        year:"2020 - Present",
+        duration:"2020 - 2025",
         name:"M.Sc. Software Systems",
         institute: "Coimbatore Institute of Technology, Coimbatore",
-        grade: "8.55 (upto 8th sem)"
+        grade: "CGPA: 8.63"
     },
     {
-        year:"2018 - 2020",
+        duration:"2018 - 2020",
         name:"Higher Secondary",
         institute: "Bharatiya Vidya Bhavan, Coimbatore",
-        grade: "84 %"
-    },
-    // {
-    //     year:"2018",
-    //     name:"Secondary",
-    //     institute: "Bharatiya Vidya Bhavan, Coimbatore",
-    //     grade: "89 %"
-    // },
+        grade: "Percentage: 84 %"
+    }
 ]
 
 export const workExp = [
     {
+        name:"Software Engineer I",
+        organisation: "Checkpoint Systems Software Pvt. Ltd.",
+        duration: "Sept 2025 - Present",
+        location: "Bengaluru",
+        techStack: "Azure Cloud, Docker, Kubernetes, Helm Charts, ArgoCD, Ansible, Terraform, Nginx, BitBucket",
+        description: [
+            "Software Engineer I with a background in DevOps, having successfully transitioned from a DevOps Intern role. Actively working with cloud-native technologies to automate infrastructure and optimize deployment workflows.",
+            "Experienced in Docker and Kubernetes for containerization and orchestration, Azure Cloud for scalable infrastructure, and Terraform, Ansible, and Helm Charts for infrastructure provisioning and application management. Utilizing ArgoCD to implement GitOps-based continuous delivery and improve deployment reliability."
+        ],
+        // desc:"Software Engineer I with a background in DevOps, having successfully transitioned from a DevOps Intern role. Actively working with cloud-native technologies to automate infrastructure and optimize deployment workflows. Experienced in Docker and Kubernetes for containerization and orchestration, Azure Cloud for scalable infrastructure, and Terraform, Ansible, and Helm Charts for infrastructure provisioning and application management. Utilizing ArgoCD to implement GitOps-based continuous delivery and improve deployment reliability."
+    },
+    {
         name:"Software Engineer Intern",
         organisation: "Checkpoint Systems Software Pvt. Ltd.",
-        duration: "Jan 2025 - Present",
+        duration: "Jan 2025 - Aug 2025",
         location: "Bengaluru",
-        desc:"Currently pursuing an internship as a DevOps Intern, working with cloud-native technologies like Docker, Kubernetes, Azure Cloud, Terraform, Ansible, and ArgoCD to automate infrastructure and streamline deployments."
+        techStack: "Azure Cloud, Docker, Kubernetes, Helm Charts, ArgoCD, Ansible, Terraform, Nginx, BitBucket",
+        description: [
+            "DevOps Intern with hands-on experience in cloud-native technologies, focusing on automating infrastructure and streamlining deployment workflows.",
+            "Worked with Docker and Kubernetes for containerization and orchestration, leveraged Azure Cloud for scalable infrastructure, and used Terraform and Ansible for infrastructure provisioning and configuration management. Implemented CI/CD and GitOps practices using ArgoCD to improve deployment reliability and operational efficiency."
+        ]
+        // desc:"DevOps Intern with hands-on experience in cloud-native technologies, focusing on automating infrastructure and streamlining deployment workflows. Worked with Docker and Kubernetes for containerization and orchestration, leveraged Azure Cloud for scalable infrastructure, and used Terraform and Ansible for infrastructure provisioning and configuration management. Implemented CI/CD and GitOps practices using ArgoCD to improve deployment reliability and operational efficiency."
     },
     {
         name:"Software Engineer Intern",
         organisation: "Smartail Pvt. Ltd.",
         duration: "Jun 2023 - Nov 2023",
         location: "Chennai",
-        desc:"Completed a 6-month internship at Smartail as a Software Engineer, developing full stack applications with Angular, Spring Boot, MongoDB, and Python."
+        techStack: "Angular, Spring Boot, Python, MongoDB, VS Code, IntelliJ, GitLab, Docker",
+        description: [
+            "Completed a 6-month internship at Smartail as a Software Engineer Intern, contributing to the development of full-stack applications using Angular, Spring Boot, MongoDB, and Python."
+        ],
+        // desc:"Completed a 6-month internship at Smartail as a Software Engineer Intern, contributing to the development of full-stack applications using Angular, Spring Boot, MongoDB, and Python."
     }
 ]
 

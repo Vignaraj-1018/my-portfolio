@@ -14,14 +14,14 @@ const About = () => {
         </div>
         <div className="flex flex-col gap-10 ">
           <div className="flex flex-col gap-3">
-            <p className="flex text-slate-400">
-              I'm a full-stack web developer with a knack for cracking problems and a love for learning new things.  I've honed my skills in both front-end and back-end development, and I'm certified in areas like problem-solving, JavaScript, React, NodeJS, and Python.  I even aced the HackerRank Frontend Developer certification!  And to show you I don't just talk the talk, I've actively solved over 200 problems on LeetCode (including earning the 50 Days Badge this year!) to put my skills to the test.
+            <p className="flex text-slate-400 sm:text-xl text-sm text-justify">
+              I'm a Software Engineer with a strong full-stack background and a growing focus on DevOps and cloud-native technologies. I enjoy breaking down complex problems, building scalable systems, and continuously expanding my skill set across both application development and infrastructure.
             </p>
-            {/* <p className="flex text-slate-400">
-              My passion for learning keeps me constantly expanding my knowledge.  I've taken courses on freeCodeCamp and Coursera, diving deep into back-end development, APIs, Git, and more.  This hunger for knowledge extends beyond myself - I've even hosted sessions for the FOSS Club of CIT to share my expertise on Git and GitHub.
-            </p> */}
-            <p className="flex text-slate-400">
-              I'm a team player who thrives on tackling complex challenges and delivering effective solutions.  I'm always on the lookout for new opportunities to collaborate within the tech community and keep growing as a developer.
+            <p className="flex text-slate-400 sm:text-xl text-sm text-justify">
+              My experience spans front-end and back-end development along with hands-on work in containerization, cloud platforms, and automation. I’ve validated my problem-solving skills through multiple certifications and by solving 200+ problems on LeetCode, consistently pushing myself to write better, more efficient solutions.
+            </p>
+            <p className="flex text-slate-400 sm:text-xl text-sm text-justify">
+              I thrive in collaborative environments, enjoy tackling challenging systems, and am always eager to learn, improve, and contribute to impactful engineering work.
             </p>
           </div>
           <div className="sm:flex hidden flex-wrap flex-row gap-3 justify-start select-none">
@@ -37,7 +37,7 @@ const About = () => {
             <div className="flex flex-wrap gap-3">
               {techStack.map((item, key)=>(
                 <div className="flex gap-3 flex-auto border-slate-600 border-[1px] p-3 rounded-xl items-center justify-center" key={key} data-aos="fade-up" data-aos-duration='1000'>
-                  <p className="flex text-slate-200 text-lg">{item.name}</p>
+                  <p className="flex text-slate-200 text-xs">{item.name}</p>
                 </div>
               ))}
             </div>
